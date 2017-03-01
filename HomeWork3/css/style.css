@@ -57,6 +57,7 @@
   float: left;
   margin-left: 50px;
   margin-top: 40px;
+  margin-bottom: -1px;
 }
 
 .sidebar ul {
@@ -65,17 +66,18 @@
   padding:0;
   color: #656363;
   font-size: 13.33px;
-  font-family: 'OpenSans', sans-serif;
 }
 
 .sidebar li {
   padding:18px 23px 14px;
+  margin-bottom: -1px;
   border: 1px solid #c8c8c8;
   width: 194px;
 }
 
 .sidebar li:nth-child(3) {
   font-weight: bold;
+  margin-bottom: -1px;
   padding-left: 36px;
   width: 181px;
 }
