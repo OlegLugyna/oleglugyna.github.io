@@ -40,7 +40,7 @@
 .menu li {
   font-size: 14.85px;
   display: inline-block;
-  margin: 0;
+  margin: -1;
   padding: 15px 65px 15px;
 }
 
