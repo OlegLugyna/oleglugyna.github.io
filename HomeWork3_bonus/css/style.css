@@ -1,0 +1,15 @@
+.wrapper {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  height: 880px;
+  width: 960px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-sizing: border-box;
+}
+
+.logo {
+
+}
