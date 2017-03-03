@@ -7,15 +7,13 @@
   width: 1067px;
   font-family: 'OpenSans', sans-serif;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0px 0 15px #dbdbdb;
+
 }
 
 /*HEADER*/
-.header {
-  margin-left: 50px;
-  margin-top: 50px;
-}
-
 .logo a {
   color: #2f2f2f;
   font-size: 38px;
@@ -24,36 +22,37 @@
 
 .menu {
   box-sizing: border-box;
-  width: 967px;
+  width: 100%;
   margin-top: 40px;
   background: linear-gradient(#4a4a4a, #2e2e2e);
   font-size: 0;
 }
 
 .menu a {
+  display: block;
   color: #fff;
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 65px 15px 25px;
 }
 
 .menu li {
   font-size: 14.85px;
   display: inline-block;
-  margin: -1;
-  padding: 15px 65px 15px;
+  /*padding: 15px 65px 15px 25px;*/
 }
 
 .menu li:hover {
   background-color: #434343;
   border-left: 1px solid #838383;
   border-right: 1px solid #838383;
+  margin-left: -1px;
+  margin-right: -1px;
 }
 
 /*SIDEBAR*/
 .sidebar {
   float: left;
-  margin-left: 50px;
   margin-top: 40px;
   margin-bottom: -1px;
 }
@@ -63,40 +62,45 @@
 }
 
 .sidebar li {
-  padding:18px 23px 14px;
+  box-sizing: border-box;
   margin-bottom: -1px;
   border: 1px solid #c8c8c8;
-  width: 194px;
+  width: 240px;
   font-size: 13.33px;
 }
 
 .sidebar a {
+  display: block;
   text-decoration: none;
   color: #656363;
   margin:0;
-  padding:0;
+  padding:18px 23px 14px;
 }
 
 .sidebar li:hover {
+  box-sizing: border-box;
   font-weight: bold;
   margin-bottom: -1px;
-  padding-left: 36px;
-  width: 181px;
+  padding-left: 13px;
+  width: 240px;
 }
 
 /*CONTENT*/
 .content {
   float:right;
-  width: 675px;
+  margin: 0 auto;
+  width: 680px;
+  /*width: 100%;*/
   margin-top: 40px;
-  margin-right: 50px;
+}
+
+.image>img {
+  width: 100%;
 }
 
 .image {
   margin: 0 auto;
   border: 1px solid #c8c8c8;
-  width:477px;
-  margin: 0 auto;
   padding:50px 95px;
 }
 
@@ -110,12 +114,18 @@
 
 /*FOOTER*/
 .footer {
-  display: inline-block;
   background-color: #e1e1e1;
-  width: 967px;
+  width: 100%;
   clear: both;
-  margin-left: 50px;
   font-size: 13.33px;
+
+}
+.footer::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
 .footer a {
