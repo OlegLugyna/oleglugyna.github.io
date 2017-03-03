@@ -24,7 +24,7 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 40px;
-  background: linear-gradient(#4a4a4a, #2e2e2e);
+  background: linear-gradient(#5d5d5d, #454444);
   font-size: 0;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .menu li:hover {
-  background-color: #434343;
+  background-color: #3f3f3f;
   border-left: 1px solid #838383;
   border-right: 1px solid #838383;
   margin-left: -1px;
