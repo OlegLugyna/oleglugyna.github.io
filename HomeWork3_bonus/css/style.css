@@ -1,15 +1,104 @@
+html,
+body {
+  height:100%;
+}
+
 .wrapper {
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   height: 880px;
   width: 960px;
-  border: 1px solid black;
   margin: 0 auto;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 55px 70px 30px;
   box-sizing: border-box;
+  display: table;
+}
+
+/*HEADER*/
+.header {
+  width: 100%;
+  padding-right: 15px;
+  vertical-align: text-bottom;
 }
 
 .logo {
+width: 48%;
+float: left;
+}
 
+.contacts {
+  width:90px;
+  color: #adadad;
+  float:right;
+  margin-top: 95px;
+}
+
+.header::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.contacts div {
+  text-align: left;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.contact_us {
+  font-size: 10.16px;
+  line-height: 16px;
+}
+
+.tlf,
+.email {
+  font-size: 8.47px;
+  line-height: 8px;
+}
+
+/*CONTENT*/
+.content {
+  display: table-row;
+  height: 100%;
+}
+.block {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.tibet,
+.maldives {
+  margin: 0;
+}
+
+.picture {
+  width: 262px;
+  height: 180px;
+}
+
+
+.wrapper_firstline,
+.wrapper_secondline {
+  text-align: center;
+  width: 100%;
+}
+.wrapper_secondline {
+  margin-top: 54px;
+}
+
+.text {
+  color: #cdcdcd;
+  text-align: center;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 15.24px;
+  padding-top: 9px;
+  margin: 0;
+
+}
+
+/*FOOTER*/
+.footer {
+  color: #adadad;
+  text-align: center;
 }
