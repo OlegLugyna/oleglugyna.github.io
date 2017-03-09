@@ -1,51 +1,43 @@
 body {
-  width: 1280px;
   margin: 0 auto;
   height: 100%;
   font-size: 0;
-}
-
-/*HEADER*/
-.header {
-  background-color: #ffffff;
-  margin: 0 auto;
-  position: relative;
+  background-image: url('../img/Fon.png');
 }
 
 .comand_line {
   width:100%;
 }
 
-.line_darkblue {
-  background-color: #128aa7;
+.comand_line>img {
   width: 100%;
-  height: 30px;
 }
 
-.line_blue {
-  background: linear-gradient(#13cde1, #feffff);
-  height: 148px;
+.wrapper {
+width: 1000px;
+margin: 0 auto;
+height: 100%;
+display: table;
 }
-.wrapper_box {
-  position: absolute;
-  top: 35px;
-  left: 140px;
-  z-index: 10;
+
+.wrapper_shadow {
+box-shadow: 0 0 20px #0a5b71;
+}
+
+/*HEADER*/
+.header {
+  margin: 0 auto;
+  width: 1000px;
 }
 
 .main_box {
   background-color: #ffffff;
   position: relative;
-  width: 1000px;
-  height: 178px;
+  width: 100%;
+  height: 173px;
   margin: 0 auto;
 }
 
-.main_box::after {
-  clear: both;
-  display: block;
-  content: '';
-}
 .logo {
   float: left;
   width: 40%;
@@ -68,6 +60,12 @@ body {
 .tlf,
 .email {
   line-height: 20px;
+}
+
+.main_box::after {
+  clear: both;
+  display: block;
+  content: '';
 }
 
 .flags  {
@@ -109,14 +107,6 @@ body {
 }
 
 /*CONTENT*/
-.wrapper{
-  background: linear-gradient(#40c6d3, #0c739f);
-  width: 100%;
-  height: 100%;
-  display: table;
-  margin: 0 auto;
-}
-
 .content {
   margin: 0 auto;
   display: table-row;
@@ -183,12 +173,7 @@ padding: 8px 30px 11px 10px;
 }
 
 .info {
-  width: 1000px;
-  margin: 0 auto;
-  background-image: url('../img/logo.png');
-  background-repeat: repeat-y;
-  /*overflow: auto;*/
-  /*float:left;*/
+  display: table;
 }
 
 h3 {
@@ -201,20 +186,20 @@ h3 {
 }
 
 .left_column {
-float: left;
+display: table-cell;
 background-color: #edeef0;
 width: 21%;
 }
 
 .middel {
+  display: table-cell;
   background-color: #ffffff;
-  float: left;
   width: 58%;
   font-size: 30px;
 }
 
 .right_column {
-  float:left;
+  display: table-cell;
   background-color: #edeef0;
   width: 21%;
 }
