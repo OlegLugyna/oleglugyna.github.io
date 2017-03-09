@@ -98,7 +98,7 @@ body {
 
 /*CONTENT*/
 .content {
-  float:right;
+  float: right;
   margin: 0 auto;
   width: 680px;
   margin-top: 40px;
@@ -113,7 +113,7 @@ body {
 .image {
   margin: 0 auto;
   border: 1px solid #c8c8c8;
-  padding:50px 95px;
+  padding: 50px 95px;
 }
 
 .text {
