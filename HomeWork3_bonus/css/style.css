@@ -11,9 +11,10 @@ body {
 body {
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
-  margin: 0 auto;
+  background-size: cover;
   height: 880px;
   width: 960px;
+  margin: 0 auto;
 }
 
 .wrapper {

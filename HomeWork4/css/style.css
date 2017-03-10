@@ -12,6 +12,7 @@ body {
   height: 100%;
   font-size: 0;
   background-image: url('../img/Fon.png');
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -135,7 +136,11 @@ box-shadow: 0 0 20px #0a5b71;
   position: relative;
   margin-right: -4px;
   background-color: #333333;
-  }
+}
+.menu ul {
+  white-space: nowrap;
+  box-sizing: border-box;
+}
 
 .menu li:hover .sub_menu{
   display: block;
@@ -145,12 +150,12 @@ box-shadow: 0 0 20px #0a5b71;
   display: block;
   text-decoration: none;
   color:#ffffff;
-  padding: 8px 55px 11px 8px;
+  padding: 8px 33px 11px;
   box-sizing: border-box;
 }
 
 .menu li:first-child {
-  padding-left: 48px;
+  padding-left: 27px;
 }
 
 .menu .sub_menu {
