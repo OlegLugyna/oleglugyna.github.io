@@ -1,17 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height:100%;
 }
 
-.wrapper {
-  background-image: url('../img/background.jpg');
+body {
+  background-image: url('../img/background.png');
   background-repeat: no-repeat;
+  margin: 0 auto;
   height: 880px;
   width: 960px;
-  margin: 0 auto;
-  padding: 55px 70px 30px;
+}
+
+.wrapper {
+  padding: 55px 68px 30px;
   box-sizing: border-box;
   display: table;
+  height: 100%;
   font-size: 0;
 }
 
@@ -20,19 +29,21 @@ body {
   width: 100%;
   padding-right: 15px;
   vertical-align: text-bottom;
+  position: relative;
 }
 
 .logo {
-width: 48%;
-float: left;
+  width: 48%;
+  float: left;
 }
 
 .contacts {
   width:90px;
   color: #adadad;
-  float:right;
-  margin-top: 100px;
-}
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  }
 
 .header::after {
 	content: ".";
@@ -60,33 +71,24 @@ float: left;
 
 /*CONTENT*/
 .content {
+  text-align: justify;
   display: table-row;
   height: 100%;
 }
 
 .block {
-  display: inline-block;
-  margin-right: 13px;
-}
-
-.tibet,
-.maldives {
-  margin: 0;
+  display:inline-block;
+  margin-right: 10px;
+  margin-bottom: 55px;
 }
 
 .picture {
-  width: 262px;
-  height: 180px;
+  border: 2px solid #888888;
 }
 
-.wrapper_firstline,
-.wrapper_secondline {
-  text-align: center;
-  width: 100%;
-}
-
-.wrapper_secondline {
-  margin-top: 54px;
+.picture a {
+  width: 260px;
+  height: 170px;
 }
 
 .text {
@@ -94,8 +96,6 @@ float: left;
   text-align: center;
   font-family: 'Tahoma', sans-serif;
   font-size: 15.24px;
-  padding-top: 9px;
-  margin: 0;
 }
 
 /*FOOTER*/

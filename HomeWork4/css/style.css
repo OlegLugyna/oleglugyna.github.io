@@ -75,6 +75,10 @@ box-shadow: 0 0 20px #0a5b71;
   float:right;
 }
 
+.flags a {
+  display: block;
+}
+
 .flags div {
   font-size: 10px;
   font-family: 'Tahoma',sans-serif;
