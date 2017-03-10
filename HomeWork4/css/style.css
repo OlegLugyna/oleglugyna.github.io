@@ -97,7 +97,7 @@ box-shadow: 0 0 20px #0a5b71;
   margin-right: 15px;
 }
 
-.last-child {
+.flags_li:first-child {
   margin-right: 0;
 }
 
