@@ -59,42 +59,66 @@ header li a {
   display: inline-block;
 }
 
-header li a span {
-  text-decoration: underline;
-}
 
-header li:last-child a{
+
+header li:last-child {
   margin-right: 20px;
   background: linear-gradient(#4faedb, #2e7ac4);
-  padding: 0 10px 0 14px;
-  color: #ffffff;
+  padding: 0 0 0 14px;
+  color: #fff;
+  /*font-size: 14px;*/
+}
+
+header li:last-child a {
+  color: #fff;
+  /*text-decoration: underline;*/
+  padding: 0 8px 0 4px;
+  font-size: 14px;
 }
 
 header li:nth-child(6) {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
-header li:hover a{
+header li:nth-child(-n+6):hover a {
   background-color: #4eabda;
   color: #fff;
 }
+
 .flagok {
   background-image: url(../img/Flag_icon.png);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 1151px;
-  top: 11px;
+  left: 995px;
+  top: 10px;
 }
 
 .flagok_line {
 height: 32px;
 border-left: 1px solid #53a4dd;
 position: absolute;
-left: 1141px;
+left: 985px;
 top: 5px;
+}
 
+.entrar a {
+  color:#fff;
+}
+
+.entrar:hover a {
+text-decoration: underline;
+background: linear-gradient(#4faedb, #2e7ac4);
+}
+
+.cadastre_se a {
+  color:#fff;
+}
+
+.cadastre_se:hover a {
+text-decoration: underline;
+background: linear-gradient(#4faedb, #2e7ac4);
 }
 
 /*CONTENT*/
@@ -106,18 +130,22 @@ top: 5px;
   left: 0;
   overflow: auto;
 }
+
 .content {
   height: 630px;
-  /*height: 100%;*/
   width: 560px;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -315px 0 0 -280px;
-  clear: both;
   background-color: rgba(0,0,0,.63);
-  /*margin: 0 auto;*/
   color: #fff;
+}
+
+.content::after {
+  content:'';
+  clear:both;
+  display: block;
 }
 
 .cadastre {
