@@ -71,12 +71,30 @@ header li:last-child a{
 }
 
 header li:nth-child(6) {
-  border-left: 1px solid #53a4dd;
+  padding-left: 25px;
 }
 
 header li:hover a{
   background-color: #4eabda;
   color: #fff;
+}
+.flagok {
+  background-image: url(../img/Flag_icon.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 1151px;
+  top: 11px;
+}
+
+.flagok_line {
+height: 32px;
+border-left: 1px solid #53a4dd;
+position: absolute;
+left: 1141px;
+top: 5px;
+
 }
 
 /*CONTENT*/
