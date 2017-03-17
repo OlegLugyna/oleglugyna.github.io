@@ -1,0 +1,22 @@
+/* Connect font "Helvetica Neue"; */
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeue.woff') format('woff'),
+		url('../fonts/HelveticaNeue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ /*Connect font "Tahoma-Regular"; */
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma-Regular.eot');
+    src: url('../fonts/Tahoma-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tahoma-Regular.woff') format('woff'),
+         url('../fonts/Tahoma-Regular.ttf') format('truetype'),
+         url('../fonts/Tahoma-Regular.svg#Tahoma-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
