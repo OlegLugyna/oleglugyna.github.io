@@ -23,6 +23,7 @@ header {
   height: 43px;
   background-color: #074f8e;
   overflow: hidden;
+  font-size: 0;
 }
 
 header::after {
@@ -38,7 +39,6 @@ header ul {
 header li {
   display: inline-block;
   list-style: none;
-  margin-left: -5px;
 }
 
 header a {
@@ -59,24 +59,28 @@ header li a {
 
 header li:last-child {
   margin-right: 20px;
-  background: linear-gradient(#4faedb, #2e7ac4);
   padding: 0 0 0 14px;
   color: #fff;
   font-size: 14px;
 }
 
-header li:last-child a {
+header li:last-child:hover,
+header li:nth-child(6):hover {
+  background: linear-gradient(#4faedb, #2e7ac4);
   color: #fff;
-  /*text-decoration: underline;*/
-  padding: 0 8px 0 4px;
   font-size: 14px;
 }
 
-header li:nth-child(6) {
-  padding-left: 30px;
+header li:last-child a {
+  padding: 0 8px 0 4px;
 }
 
-header li:nth-child(-n+6):hover a {
+header li:nth-child(6) {
+  padding-left: 25px;
+  position: relative;
+}
+
+header li:nth-child(-n+5):hover a {
   background-color: #4eabda;
   color: #fff;
 }
@@ -87,7 +91,7 @@ header li:nth-child(-n+6):hover a {
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 1141px;
+  left: 10px;
   top: 10px;
 }
 
@@ -95,26 +99,22 @@ header li:nth-child(-n+6):hover a {
   height: 32px;
   border-left: 1px solid #53a4dd;
   position: absolute;
-  left: 1131px;
+  left: 0;
   top: 5px;
 }
 
-.entrar a {
+.entrar a,
+.cadastre_se a,
+.ofertas a {
   color:#fff;
 }
 
-.entrar:hover a {
+.entrar:hover a,
+.cadastre_se:hover a,
+.ofertas:hover a {
   text-decoration: underline;
   background: linear-gradient(#4faedb, #2e7ac4);
-}
-
-.cadastre_se a {
   color:#fff;
-}
-
-.cadastre_se:hover a {
-  text-decoration: underline;
-  background: linear-gradient(#4faedb, #2e7ac4);
 }
 
 /*CONTENT*/
@@ -153,8 +153,14 @@ header li:nth-child(-n+6):hover a {
   line-height: 65px;
 }
 
+.fb_wrapper {
+  margin: 0 auto;
+  width: 50%;
+}
+
 .fb {
   font: 0;
+  width: 276px;
   margin: 25px 0 20px;
   overflow: hidden;
 }
@@ -166,8 +172,6 @@ header li:nth-child(-n+6):hover a {
 }
 
 .fb a {
-  margin: 0;
-  padding: 0;
   font-size: 14px;
   font-family: 'Helvetica Neue', 'Ariel', sans-serif;
   color: #fff;
@@ -180,20 +184,18 @@ header li:nth-child(-n+6):hover a {
   line-height: 35px;
   text-align: center;
   border-radius: 4px 0 0 4px;
-  margin-left: 142px;
   background-color: #374f8f;
   border-right: 2px solid #223c77;
 }
 
 .fb_log {
-  float:right;
+  float:left;
   width: 239px;
   height: 35px;
   line-height: 35px;
   box-sizing: border-box;
   padding-left: 32px;
   border-radius: 0 4px 4px 0;
-  margin-right: 142px;
   background-color: #374f8f;
   border-left: 2px solid #4b68ac;
 }
@@ -206,6 +208,7 @@ header li:nth-child(-n+6):hover a {
 .fb_log span {
   font-weight: bold;
 }
+
 .fb_mark {
   padding-left: 15px;
   font-size: 16px;
