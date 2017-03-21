@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+/*HEADER*/
+header {
+text-align: center;
+}
+
+.main_line {
+  margin: 10px 0 10px;
+}
+
+.block {
+  display: inline-block;
+}
+
+.tlf,
+.login_to,
+.three_icons {
+  display: inline-block;
+}
+
+.number {
+  position: relative;
+  padding-left: 25px;
+  color: #5e696d;
+}
+.number a {
+  color: #5e696d;
+}
+
+.number::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 23px;
+  width: 22px;
+  background-image: url(../img/sprite_1.png);
+  background-repeat: no-repeat;
+  /*background-position: 0 0;*/
+}
+
+.number a {
+  text-decoration: none;
+}
+.login_to {
+  background: linear-gradient(#1f6685, #0d3458);
+  margin-left: 20px;
+  line-height: 33px;
+}
+
+.log_icon {
+  height: 21px;
+  width: 21px;
+  background-image: url(../img/sprite_1.png);
+  background-repeat: no-repeat;
+  background-position: -18px 0;
+}
+
+.vhod a,
+.chek_in a,
+.fogot_pass a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.three_icons {
+  border: 1px solid #c1c8cb;
+  width: 77px;
+  height: 22px;
+  border-radius: 11px;
+
+
+}
+
+.home,
+.site_map,
+.letter {
+  height: 16px;
+  width: 20px;
+
+  background-image: url(../img/sprite_3.png);
+  background-repeat: no-repeat;
+}
+
+.home {
+  background-position: -3px 0;
+}
+.site_map {
+  background-position: -26px 0;
+}
+.letter {
+  background-position: -51px 0;
+}
+
+/*CONTENT*/
+
+
+/*FOOTER*/
