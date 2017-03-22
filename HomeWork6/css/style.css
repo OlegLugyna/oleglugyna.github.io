@@ -12,9 +12,10 @@ body {
 
 .wrapper {
   height: 100%;
-  width: 100%;
+  width: 910px;
   margin: 0 auto;
-  border: 1px solid red;
+  /*font-size: 0;*/
+  /*border: 1px solid red;*/
 }
 /*HEADER*/
 header {
@@ -23,6 +24,9 @@ text-align: center;
 
 .main_line {
   margin: 10px 0 10px;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+  vertical-align: middle;
 }
 
 .block {
@@ -38,47 +42,75 @@ text-align: center;
 .number {
   position: relative;
   padding-left: 25px;
-  color: #5e696d;
 }
 .number a {
   color: #5e696d;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
 }
 
 .number::before {
-  content: "";
+  content: " ";
   display: inline-block;
   position: absolute;
-  top: -5px;
+  top: -2px;
   left: 0;
   height: 23px;
   width: 22px;
   background-image: url(../img/sprite_1.png);
   background-repeat: no-repeat;
-  /*background-position: 0 0;*/
 }
 
-.number a {
-  text-decoration: none;
-}
 .login_to {
   background: linear-gradient(#1f6685, #0d3458);
   margin-left: 20px;
   line-height: 33px;
+  position: relative;
 }
 
 .log_icon {
   height: 21px;
-  width: 21px;
+  width: 23px;
   background-image: url(../img/sprite_1.png);
   background-repeat: no-repeat;
   background-position: -18px 0;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.log_forms {
+  font-size: 10.91px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  margin-left: 25px;
+}
+
+.login,
+.password {
+  width: 114px;
+  height: 16px;
+  margin-right: 9px;
+}
+.vhod a {
+  border-right:1px solid #fff;
 }
 
 .vhod a,
-.chek_in a,
-.fogot_pass a {
+.chek_in a {
   text-decoration: none;
   color: #fff;
+  font-size: 10.91px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+
+  line-height: 7px;
+  padding: 0 5px 0 5px;
+}
+
+.fogot_pass a {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  padding: 0 17px 0 11px;
 }
 
 .three_icons {
@@ -86,8 +118,7 @@ text-align: center;
   width: 77px;
   height: 22px;
   border-radius: 11px;
-
-
+  margin-left: 17px;
 }
 
 .home,
@@ -95,7 +126,6 @@ text-align: center;
 .letter {
   height: 16px;
   width: 20px;
-
   background-image: url(../img/sprite_3.png);
   background-repeat: no-repeat;
 }
@@ -103,14 +133,249 @@ text-align: center;
 .home {
   background-position: -3px 0;
 }
+
 .site_map {
   background-position: -26px 0;
 }
+
 .letter {
   background-position: -51px 0;
 }
 
+.image>img {
+  width: 100%;
+}
+
 /*CONTENT*/
+
+.menu {
+  background-color: #151719;
+  overflow: hidden;
+  line-height: 35px;
+  border-radius: 5px;
+  margin-top: 11px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.75);
+}
+
+.menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu_links {
+  float: left;
+  text-align: center;
+  /*border: 1px solid red;*/
+  width: 77%;
+  font-size: 13.64px;
+  font-family: "lucida_sans_unicoderegular", sans-serif;
+}
+
+.menu_links a {
+  padding: 0 17px 0 17px;
+}
+
+.menu_links li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu_links li:hover {
+  background: linear-gradient(#1f6787, #0d3458);
+  border-radius: 15px;
+  line-height: 30px;
+}
+
+.menu_items li {
+  float:right;
+  color: #fff;
+  padding-left: 15px;
+  font-size: 11px;
+  font-family: "Arial", sans-serif;
+}
+
+.menu_items .basket {
+  height: 23px;
+  width: 10px;
+  margin-top: 7px;
+  background-image: url(../img/sprite_1.png);
+  background-repeat: no-repeat;
+  background-position: -37px 0;
+  line-height: 35px;
+}
+
+.block_left,
+.block_center,
+.block_right {
+  height: 135px;
+  border: 1px solid #b6b6b7;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 1px rgba(104, 104, 104, .75);
+}
+
+.block_left {
+  width: 45.5%;
+  float:left;
+  margin-right: 1.7%;
+}
+
+.block_center {
+  width: 21%;
+  float: left;
+}
+
+.three_blocks {
+  margin: 20px 0 25px;
+
+}
+
+.block_right {
+  width: 30%;
+  float: right;
+}
+
+.three_blocks::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.primary .left {
+  float:left;
+  border:1px solid red;
+  margin-right: 20px;
+}
+
+.catalog {
+  height: 28px;
+  width: 185px;
+  border: 1px solid #8b979c;
+  border-radius: 14px;
+  font-size: 12.73px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+}
+main {
+  float:left;
+  background: linear-gradient(#e4e7e8, #94a7b0);
+  width: 526px;
+  height: 625px;
+  text-align: center;
+}
+
+.primary .right {
+  float:right;
+  border:1px solid red;
+}
+.primary::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.goodyear,
+.nokian,
+.hankook {
+  display: inline-block;
+  text-align: center;
+  margin-top: 14px;
+}
+.price {
+  margin-bottom: 14px;
+}
+
+.goodyear,
+.nokian {
+  margin-right: 30px;
+}
+
+.name_brand {
+  font-size: 14.59px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  color: #206988;
+}
+
+.type {
+  font-size: 12.77px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  color: #1f2528;
+}
+
+.price {
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  color: #114165;
+  font-weight: bold;
+  font-style: italic;
+}
+
+figure div {
+  width: 137px;
+  height: 127px;
+  background-color: #fff;
+  border-radius: 5px;
+  background-image: url(../img/sprite_wheels.png);
+  background-repeat: no-repeat;
+  background-position: 12px 0;
+}
+
+.goodyear figure div {
+  background-position: 12px 0;
+}
+.nokian figure div {
+  background-position: -157px 0;
+}
+.hankook figure div {
+  background-position: -316px 0;
+}
+
 
 
 /*FOOTER*/
+footer {
+  background-color: #213a4d;
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer ul{
+  text-align: center;
+}
+
+footer li {
+  margin-top: 13px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
+  padding: 0 12px 0 12px;
+  border-right: 2px solid #8d989f;
+}
+
+footer div {
+  text-align: center;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  margin-top: 20px;
+  color: #7f4740;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #52abcb;
+}
