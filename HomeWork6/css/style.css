@@ -235,7 +235,7 @@ text-align: center;
 }
 
 .three_blocks {
-  margin: 20px 0 25px;
+  margin: 20px 0 17px;
 
 }
 
@@ -254,6 +254,12 @@ text-align: center;
   float:left;
   border:1px solid red;
   margin-right: 20px;
+  margin-top: 4px;
+}
+
+.primary .left li {
+  font-size: 12.73px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
 }
 
 .catalog {
@@ -263,7 +269,56 @@ text-align: center;
   border-radius: 14px;
   font-size: 12.73px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
+  position: relative;
+  line-height: 28px;
+  padding-left:25px;
 }
+
+.catalog::before {
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-image: url(../img/sprite_2.png);
+  background-repeat: no-repeat;
+  background-position: -2px 0;
+}
+
+.tires {
+  margin-top: 15px;
+}
+
+.tires1,
+.disks1,
+.bolts1 {
+  height: 28px;
+  width: 150px;
+  border: 1px solid #8b979c;
+  border-radius: 14px;
+  font-size: 14px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  line-height: 28px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.tires1::before,
+.disks1::before,
+.bolts1::before {
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-image: url(../img/sprite_2.png);
+  background-repeat: no-repeat;
+  background-position: -28px 0;
+}
+
+
 main {
   float:left;
   background: linear-gradient(#e4e7e8, #94a7b0);
