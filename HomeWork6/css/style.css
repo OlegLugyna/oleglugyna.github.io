@@ -7,14 +7,14 @@ html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .wrapper {
   height: 100%;
   width: 910px;
   margin: 0 auto;
-  /*font-size: 0;*/
+  font-size: 0;
   /*border: 1px solid red;*/
 }
 /*HEADER*/
@@ -121,9 +121,7 @@ text-align: center;
   margin-left: 17px;
 }
 
-.home,
-.site_map,
-.letter {
+.three_icons .block {
   height: 16px;
   width: 20px;
   background-image: url(../img/sprite_3.png);
@@ -147,7 +145,6 @@ text-align: center;
 }
 
 /*CONTENT*/
-
 .menu {
   background-color: #151719;
   overflow: hidden;
@@ -175,14 +172,16 @@ text-align: center;
 .menu_links {
   float: left;
   text-align: center;
-  /*border: 1px solid red;*/
-  width: 77%;
+  width: 73%;
   font-size: 13.64px;
   font-family: "lucida_sans_unicoderegular", sans-serif;
 }
 
 .menu_links a {
   padding: 0 17px 0 17px;
+}
+.menu_links li:first-child {
+  margin-left: 50px;
 }
 
 .menu_links li {
@@ -212,6 +211,15 @@ text-align: center;
   background-repeat: no-repeat;
   background-position: -37px 0;
   line-height: 35px;
+}
+.menu_items span {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  color: rgb(13,90,143);
+
+}
+.menu_items li:first-child span {
+  padding: 0 15px 0 12px;
 }
 
 .block_left,
@@ -252,26 +260,27 @@ text-align: center;
 
 .primary .left {
   float:left;
-  border:1px solid red;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-top: 4px;
 }
 
-.primary .left li {
-  font-size: 12.73px;
-  font-family: 'lucida_sans_unicoderegular', sans-serif;
+.primary::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .catalog {
   height: 28px;
-  width: 185px;
+  width: 148px;
   border: 1px solid #8b979c;
   border-radius: 14px;
   font-size: 12.73px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
   position: relative;
+  color: rgb(145,158,173);
   line-height: 28px;
-  padding-left:25px;
+  padding-left:30px;
 }
 
 .catalog::before {
@@ -286,27 +295,24 @@ text-align: center;
   background-position: -2px 0;
 }
 
-.tires {
-  margin-top: 15px;
+.list ul {
+  list-style-image: url(../img/marker_spisok.png);
 }
 
-.tires1,
-.disks1,
-.bolts1 {
+.list div {
   height: 28px;
-  width: 150px;
+  width: 120px;
   border: 1px solid #8b979c;
   border-radius: 14px;
   font-size: 14px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
   line-height: 28px;
+  color: rgb(145,158,173);
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
-.tires1::before,
-.disks1::before,
-.bolts1::before {
+.list div::before {
   content: ' ';
   width: 25px;
   height: 25px;
@@ -318,6 +324,29 @@ text-align: center;
   background-position: -28px 0;
 }
 
+.tires {
+  margin-top: 15px;
+}
+.left .list ul {
+  margin-left: 50px;
+}
+
+.list li a {
+  font-size: 12.73px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  text-decoration: none;
+  color: rgb(134,144,149);
+  margin-left: -5px;
+}
+
+.list li a:hover {
+  font-size: 12.73px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #0c3256;
+  cursor: pointer;
+}
 
 main {
   float:left;
@@ -327,24 +356,15 @@ main {
   text-align: center;
 }
 
-.primary .right {
-  float:right;
-  border:1px solid red;
-}
-.primary::after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .goodyear,
 .nokian,
 .hankook {
   display: inline-block;
   text-align: center;
-  margin-top: 14px;
+  margin-top: 17px;
 }
 .price {
-  margin-bottom: 14px;
+  margin-bottom: 30px;
 }
 
 .goodyear,
@@ -356,12 +376,14 @@ main {
   font-size: 14.59px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
   color: #206988;
+  line-height: 13px;
 }
 
 .type {
   font-size: 12.77px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
   color: #1f2528;
+  line-height: 15px;
 }
 
 .price {
@@ -372,24 +394,120 @@ main {
   font-style: italic;
 }
 
-figure div {
+figure div a {
+  display: block;
   width: 137px;
   height: 127px;
   background-color: #fff;
   border-radius: 5px;
   background-image: url(../img/sprite_wheels.png);
   background-repeat: no-repeat;
-  background-position: 12px 0;
 }
 
-.goodyear figure div {
+.goodyear figure div a {
   background-position: 12px 0;
 }
-.nokian figure div {
+.nokian figure div a {
   background-position: -157px 0;
 }
-.hankook figure div {
+.hankook figure div a {
   background-position: -316px 0;
+}
+
+.primary .right {
+  float:right;
+  margin-top: 4px;
+}
+
+.right label {
+  display: block;
+  font-size: 12.73px;
+  font-family: 'lucida_sans_unicoderegular', sans-serif;
+  color: rgb(70,89,97);
+  margin: 10px 0 12px;
+  line-height: 15px;
+}
+
+.right .list form {
+  margin-left: 10px;
+}
+.right input {
+  margin-right: 16px;
+}
+.right .disks {
+  margin-top: 20px;
+}
+
+.button input {
+  height: 26px;
+  width: 80px;
+  border-radius: 13px;
+  margin: 9px 0 0 10px;;
+  background: linear-gradient(#1f6585,#0d3458);
+  color: #fff;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+}
+
+.partners {
+  width: 680px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 38px;
+
+}
+
+.partners span {
+  display: inline-block;
+  background-image: url(../img/logo_partners.png);
+  background-repeat: no-repeat;
+}
+
+.tavo {
+  width: 98px;
+  height: 25px;
+  background-position: 0 0;
+}
+
+.ridgestone {
+  width: 97px;
+  height: 25px;
+  background-position: -100px 0;
+}
+
+.continental {
+  width: 92px;
+  height: 25px;
+  background-position: -201px 0;
+}
+
+.cooper {
+  width: 71px;
+  height: 25px;
+  background-position: -295px 0;
+}
+
+.avon {
+  width: 85px;
+  height: 25px;
+  background-position: -369px 0;
+}
+
+.tire_factory {
+  width: 70px;
+  height: 30px;
+  background-position: -456px 0;
+}
+
+.pirelli {
+  width: 80px;
+  height: 25px;
+  background-position: -525px 0;
+}
+.dunlop {
+  width: 78px;
+  height: 25px;
+  background-position: -606px 0;
 }
 
 
@@ -423,7 +541,7 @@ footer div {
   text-align: center;
   font-size: 10px;
   font-family: "Arial", sans-serif;
-  margin-top: 20px;
+  margin-top: 18px;
   color: #7f4740;
 }
 
