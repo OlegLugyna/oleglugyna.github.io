@@ -152,18 +152,14 @@ color:#fff;
   font-size: 24px;
   font-family: 'Helvetica Neue','Tahoma', sans-serif;
   line-height: 65px;
-}
-
-.fb_wrapper {
-  margin: 0 auto;
-  width: 50%;
+  margin-bottom: 25px;
 }
 
 .fb {
   font: 0;
   width: 276px;
-  margin: 25px 0 20px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .fb:after {
@@ -187,6 +183,7 @@ color:#fff;
   border-radius: 4px 0 0 4px;
   background-color: #374f8f;
   border-right: 2px solid #223c77;
+  margin-bottom: 20px;
 }
 
 .fb_log {
@@ -199,6 +196,7 @@ color:#fff;
   border-radius: 0 4px 4px 0;
   background-color: #374f8f;
   border-left: 2px solid #4b68ac;
+  margin-bottom: 20px;
 }
 
 .fb_icon {
