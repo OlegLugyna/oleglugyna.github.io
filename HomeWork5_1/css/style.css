@@ -253,54 +253,44 @@ color:#fff;
   right: 0px;
 }
 
-.form {
+form {
   width: 276px;
   margin: 0 auto;
 }
 
-.form input {
+.form_input {
   background-color: rgb(0,0,0);
   font-size: 14px;
   font-family: 'Helvetica Neue','Tahoma', sans-serif;
   color: #fff;
   padding: 12px 0 12px 20px;
-  width: 256px;
+  width: 100%;
   border: 0;
   border-bottom: 2px solid #666666;
-}
-
-.first_name {
   margin-bottom: 20px;
 }
 
-.last_name,
-.email {
-  margin-bottom: 17px;
-}
-
-.password {
-  margin-bottom: 14px;
-}
-
-.pass_confirm {
-  margin-bottom: 22px;
+form label {
+  display:block;
+  width:100%;
 }
 
 .checkbox {
   font-size: 14px;
   font-family: 'Helvetica Neue','Tahoma', sans-serif;
-  width: 276px;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
   font-size: 14px;
   font-family: 'Helvetica Neue','Tahoma', sans-serif;
   line-height: 16px;
+  width: 150px;
   padding: 10px 14px 10px;
   margin-bottom: 20px;
-  border-radius: 3px;
+  border-radius: 4px;
   background: linear-gradient(#4faddb, #2e7ac4);
 }
 
@@ -309,7 +299,7 @@ color:#fff;
   box-shadow: 0 0 9px 3px rgba(47,123,197,.77);
   border: none;
   outline: none;
-  margin-bottom: 2px;
+  margin-bottom: 22px;
 }
 
 .form_footer {
