@@ -270,8 +270,8 @@ text-align: left;
   font-size: 12px;
   font-family: "Arial", sans-serif;
   color: rgb(13,90,143);
-
 }
+
 .menu_items li:first-child span {
   padding: 0 15px 0 9px;
 }
@@ -299,7 +299,6 @@ text-align: left;
 
 .three_blocks {
   margin: 9px 0 13px;
-
 }
 
 .block_right {
@@ -383,6 +382,7 @@ text-align: left;
 .disks div {
   margin-top: -4px;
 }
+
 .bolts div {
   margin-top: -7px;
 }
@@ -390,6 +390,7 @@ text-align: left;
 .tires {
   margin-top: 12px;
 }
+
 .left .list ul {
   margin-left: 53px;
 }
@@ -433,6 +434,7 @@ main {
   margin-left: -6px;
   margin-right: 30px;
 }
+
 .goodyear3 {
   margin-top: 1px;
 }
@@ -441,6 +443,7 @@ main {
 .goodyear3 .type {
   margin-right: 5px;
 }
+
 .goodyear3 div {
   margin-top: 2px;
 }
@@ -451,16 +454,18 @@ main {
 }
 
 .nokian1 .name_brand {
-
   line-height: 15px;
 }
+
 .nokian1 .type {
   line-height: 15px;
   margin-left: -2px;
 }
+
 .nokian2 {
   margin-top: 1px;
 }
+
 .nokian2 .type {
   padding-top:1px;
 }
@@ -468,6 +473,7 @@ main {
 .hankook {
 margin-left: 1px;
 }
+
 .hankook .type {
   margin-left: -3px;
 }
