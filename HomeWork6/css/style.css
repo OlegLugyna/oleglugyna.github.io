@@ -7,7 +7,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  /*margin: 0 auto;*/
 }
 
 .wrapper {
@@ -23,9 +22,10 @@ text-align: left;
 }
 
 .main_line {
-  margin: 21px 0 10px;
+  margin: 22px 0 10px;
   box-sizing: border-box;
   vertical-align: middle;
+  position: relative;
 }
 
 .block {
@@ -39,26 +39,32 @@ text-align: left;
 }
 
 .tlf {
-  margin-left: 7px;
+  margin-left: 9px;
+  position: absolute;
+  top: 3px;
+  left: -1px;
 }
 
 .number {
   position: relative;
   padding-left: 25px;
+  padding-top: 3px;
 }
 
 .number_2 {
-  margin-left: 4px;
+  margin-left: 5px;
 }
+
 .number a {
   color: #5e696d;
   text-decoration: none;
   font-family: 'Arial', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.58px;
+  letter-spacing: 0.46px;
 }
+
 .number_2 a {
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .number::before {
@@ -75,12 +81,12 @@ text-align: left;
 
 .login_to {
   background: linear-gradient(#1f6685, #0d3458);
-  margin-left: 14px;
-  line-height: 33px;
+  margin-left: 315px;
+  line-height: 31px;
   position: relative;
-  height: 28px;
+  height: 26px;
   width: 495px;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 .log_icon {
@@ -91,8 +97,9 @@ text-align: left;
   background-position: -18px 0;
   position: absolute;
   left: 2px;
-  top: 3px;
+  top: 1px;
 }
+
 .log_forms {
   font-size: 10.91px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
@@ -100,22 +107,39 @@ text-align: left;
 }
 
 .login {
-  width: 112px;
-  height: 13px;
-  margin-right: 3px;
+  width: 109px;
+  height: 14px;
   line-height: 13px;
+  position: absolute;
+  top: 4px;
+  left: 25px;
 }
 
 .password {
-  width: 110px;
-  height: 13px;
-  margin-right: 3px;
+  width: 109px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: 146px;
 }
 
+.vhod {
+  position: absolute;
+  top: 2px;
+  right: 198px;
+}
 
-/*.vhod a {
-  border-right:1px solid #fff;
-}*/
+.chek_in {
+  position: absolute;
+  top: 1px;
+  right: 117px;
+}
+
+.fogot_pass {
+  position: absolute;
+  top: -1px;
+  right: 5px;
+}
 
 .vhod a,
 .chek_in a {
@@ -123,7 +147,6 @@ text-align: left;
   color: #fff;
   font-size: 10.91px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
-
   line-height: 7px;
   padding: 0 7px 0 5px;
 }
@@ -132,6 +155,7 @@ text-align: left;
   padding: 0 7px 0 6px;
   letter-spacing: 0.45px;
 }
+
 .fogot_pass a {
   color: #fff;
   font-size: 12px;
@@ -146,6 +170,9 @@ text-align: left;
   height: 18px;
   border-radius: 9px;
   margin-left: 17px;
+  position: absolute;
+  top: 3px;
+  right: 5px;
 }
 
 .three_icons .block {
@@ -177,7 +204,7 @@ text-align: left;
   overflow: hidden;
   line-height: 35px;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 6px;
   box-shadow: 3px 3px 5px rgba(0,0,0,.75);
 }
 
@@ -202,22 +229,13 @@ text-align: left;
   width: 69%;
   font-size: 13.64px;
   font-family: "lucida_sans_unicoderegular", sans-serif;
-  border: 1px solid red;
-}
-
-/*.menu_links a {
-  padding: 0 17px 0 17px;
-}*/
-
-
-.menu_links li:first-child {
-  /*margin-left: 94px;*/
 }
 
 .menu_links li:first-child a{
   padding: 0 9px 0 7px;
   letter-spacing: 0.2px;
 }
+
 .menu_links li:nth-child(2) a{
   padding: 0 8px 0 11px;
   letter-spacing: 0.2px;
@@ -233,7 +251,7 @@ text-align: left;
   letter-spacing: 0.25px;
 }
 .menu_links li:nth-child(5) a{
-  padding: 0 16px 0 10px;
+  padding: 0 14px 0 10px;
   letter-spacing: 0.25px;
 }
 
@@ -251,7 +269,7 @@ text-align: left;
 .menu_items li {
   float: right;
   color: #fff;
-  padding-left: 14px;
+  padding-left: 12px;
   font-size: 11px;
   font-family: "Arial", sans-serif;
   letter-spacing: 0.05px;
@@ -263,9 +281,10 @@ text-align: left;
   margin-top: 7px;
   background-image: url(../img/sprite_1.png);
   background-repeat: no-repeat;
-  background-position: -37px 0;
+  background-position: -42px -1px;
   line-height: 35px;
 }
+
 .menu_items span {
   font-size: 12px;
   font-family: "Arial", sans-serif;
@@ -286,9 +305,10 @@ text-align: left;
 }
 
 .block_left {
-  width: 46%;
+  width: 45.6%;
   float:left;
   margin-right: 1.5%;
+  margin-left: 3px;
 }
 
 .block_center {
@@ -298,16 +318,17 @@ text-align: left;
 }
 
 .three_blocks {
-  margin: 9px 0 13px;
+  margin: 11px 0 14px;
 }
 
 .block_right {
-  width: 30%;
+  width: 29.4%;
   float: right;
+  margin-right: 5px;
 }
 
 .three_blocks::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -334,16 +355,16 @@ text-align: left;
   position: relative;
   color: rgb(145,158,173);
   line-height: 27px;
-  padding-left:27px;
+  padding-left: 27px;
   letter-spacing: 0.38px;
 }
 
 .catalog::before {
-  content: ' ';
+  content: '';
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 2px;
   background-image: url(../img/sprite_2.png);
   background-repeat: no-repeat;
@@ -430,52 +451,17 @@ main {
   margin-left: 10px;
 }
 
+.hankook {
+  margin: 0 14px 0 2px;
+}
+
 .goodyear {
-  margin-left: -6px;
-  margin-right: 30px;
-}
-
-.goodyear3 {
-  margin-top: 1px;
-}
-
-.goodyear3 .name_brand,
-.goodyear3 .type {
-  margin-right: 5px;
-}
-
-.goodyear3 div {
-  margin-top: 2px;
+  margin: 0 29px 0 11px;
 }
 
 .nokian {
   margin-left: 1px;
   margin-right: 30px;
-}
-
-.nokian1 .name_brand {
-  line-height: 15px;
-}
-
-.nokian1 .type {
-  line-height: 15px;
-  margin-left: -2px;
-}
-
-.nokian2 {
-  margin-top: 1px;
-}
-
-.nokian2 .type {
-  padding-top:1px;
-}
-
-.hankook {
-margin-left: 1px;
-}
-
-.hankook .type {
-  margin-left: -3px;
 }
 
 .name_brand {
@@ -484,7 +470,35 @@ margin-left: 1px;
   color: #206988;
   line-height: 13px;
   text-align: center;
-  margin-left: -2px;
+  margin-left: 3px;
+  letter-spacing: 0.2px;
+}
+
+.goodyear .name_brand {
+  margin-left: -4px;
+}
+
+.goodyear3 .name_brand {
+  margin-left: -6px;
+  line-height: 14px;
+}
+
+.nokian1 .name_brand {
+  margin-left: 1px;
+  line-height: 14px;
+}
+
+.nokian2 .name_brand {
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+
+.nokian3 .name_brand {
+  margin-left: 2px;
+}
+
+.hankook3 .name_brand {
+  margin-left: -1px;
 }
 
 .type {
@@ -496,7 +510,51 @@ margin-left: 1px;
 }
 
 .goodyear .type {
-  margin-left: 4px;
+  margin-left: 1px;
+}
+
+.goodyear3 .type {
+  margin-left: -1px;
+}
+
+.nokian1 .type {
+  margin-left: 2px;
+  letter-spacing: 0.25px;
+  line-height: 18px;
+}
+
+.nokian2 {
+  position: relative;
+}
+
+.nokian2 .type {
+  position: absolute;
+  left: 22px;
+  top:10px;
+  letter-spacing: 0.25px;
+  line-height: 17px;
+}
+
+.nokian3 .type {
+  margin-left: 1px;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+}
+
+.hankook1 .type {
+  margin-left: -1px;
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+
+.hankook2 .type {
+  margin-left: -4px;
+  line-height: 17px;
+}
+
+.hankook3 .type {
+  margin-left: -3px;
+  line-height: 15px;
 }
 
 .price {
@@ -505,11 +563,21 @@ margin-left: 1px;
   color: #114165;
   font-weight: bold;
   font-style: italic;
-  margin-top: 4px;
-  margin-left: 8px;
-  margin-bottom: 27px;
+  margin-top: 3px;
+  margin-left: 22px;
+  margin-bottom: 26px;
   letter-spacing: 0.3px;
   text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.hankook1 .price {
+  margin-bottom: 25px;
+  margin-top: 3px;
+}
+
+.nokian3 .price {
+  margin-top: 6px;
 }
 
 figure div a {
@@ -525,11 +593,13 @@ figure div a {
 .goodyear figure div a {
   background-position: 14px -4px;
 }
+
 .nokian figure div a {
-  background-position: -154px 0;
+  background-position: -155px -3px;
 }
+
 .hankook figure div a {
-  background-position: -323px 0;
+  background-position: -324px -2px;
 }
 
 .primary .right {
@@ -540,10 +610,12 @@ figure div a {
 .right .catalog {
   padding-left: 29px;
 }
+
 .right .tires {
   margin-top: 13px;
   margin-left: 14px;
 }
+
 .right .list div {
   width: 105px;
 }
@@ -561,19 +633,24 @@ figure div a {
   margin-left: 6px;
   letter-spacing: 0.2px;
 }
+
 .right input {
   margin-right: 16px;
 }
+
 .right .disks {
   margin-top: 20px;
   margin-left: 14px;
 }
+
 .right .disk div {
   padding-left: 32px;
 }
+
 .right .disks div::before {
   left: 1px;
 }
+
 .right .disks label {
   margin: 8px 0 12px;
   line-height: 8px;
@@ -581,7 +658,7 @@ figure div a {
 
 .button input {
   height: 26px;
-  width: 80px;
+  width: 82px;
   border-radius: 13px;
   margin: 9px 0 0 22px;;
   background: linear-gradient(#1f6585,#0d3458);
@@ -595,7 +672,6 @@ figure div a {
   height: 35px;
   margin: 0 auto;
   margin-top: 33px;
-
 }
 
 .partners span {
@@ -645,13 +721,12 @@ figure div a {
   height: 25px;
   background-position: -516px 0;
 }
+
 .dunlop {
   width: 78px;
   height: 25px;
   background-position: -595px 0;
 }
-
-
 
 /*FOOTER*/
 footer {
@@ -674,13 +749,14 @@ footer a {
   color: #fff;
   font-size: 12px;
   font-family: 'Arial', sans-serif;
-  padding: 0 12px 0 12px;
+  padding: 0 11px 0 12px;
   border-right: 2px solid #8d989f;
 }
 
 footer li:last-child a {
   padding: 0 5px 0 15px;
 }
+
 footer li:nth-child(2) a {
   padding: 0 18px 0 12px;
 }
