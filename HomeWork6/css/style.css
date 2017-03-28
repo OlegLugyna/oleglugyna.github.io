@@ -22,7 +22,7 @@ text-align: left;
 }
 
 .main_line {
-  margin: 22px 0 10px;
+  margin: 17px 0 11px;
   box-sizing: border-box;
   vertical-align: middle;
   position: relative;
@@ -41,14 +41,14 @@ text-align: left;
 .tlf {
   margin-left: 9px;
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: -1px;
 }
 
 .number {
   position: relative;
   padding-left: 25px;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 .number_2 {
@@ -123,7 +123,7 @@ text-align: left;
   left: 146px;
 }
 
-.vhod {
+.log_button {
   position: absolute;
   top: 2px;
   right: 198px;
@@ -141,7 +141,7 @@ text-align: left;
   right: 5px;
 }
 
-.vhod a,
+.log_button a,
 .chek_in a {
   text-decoration: none;
   color: #fff;
@@ -171,8 +171,8 @@ text-align: left;
   border-radius: 9px;
   margin-left: 17px;
   position: absolute;
-  top: 3px;
-  right: 5px;
+  top: 2px;
+  right: 6px;
 }
 
 .three_icons .block {
@@ -237,12 +237,12 @@ text-align: left;
 }
 
 .menu_links li:nth-child(2) a{
-  padding: 0 8px 0 11px;
+  padding: 0 9px 0 10px;
   letter-spacing: 0.2px;
 }
 
 .menu_links li:nth-child(3) a{
-  padding: 0 8px 0 21px;
+  padding: 0 8px 0 20px;
   letter-spacing: 0.2px;
 }
 
@@ -251,8 +251,8 @@ text-align: left;
   letter-spacing: 0.25px;
 }
 .menu_links li:nth-child(5) a{
-  padding: 0 14px 0 10px;
-  letter-spacing: 0.25px;
+  padding: 0 14px 0 11px;
+  letter-spacing: 0.29px;
 }
 
 .menu_links li {
@@ -422,7 +422,7 @@ text-align: left;
   text-decoration: none;
   color: rgb(134,144,149);
   margin-left: -5px;
-  line-height: 26.4px;
+  line-height: 26px;
 }
 
 .list li a:hover {
@@ -438,7 +438,7 @@ main {
   float:left;
   background: linear-gradient(#e4e7e8, #94a7b0);
   width: 526px;
-  height: 625px;
+  height: 626px;
   text-align: center;
 }
 
@@ -447,8 +447,7 @@ main {
 .hankook {
   display: inline-block;
   text-align: left;
-  margin-top: 13px;
-  margin-left: 10px;
+  margin: 13px 0 0 10px;
 }
 
 .hankook {
@@ -476,6 +475,7 @@ main {
 
 .goodyear .name_brand {
   margin-left: -4px;
+  padding-top: 3px;
 }
 
 .goodyear3 .name_brand {
@@ -486,15 +486,22 @@ main {
 .nokian1 .name_brand {
   margin-left: 1px;
   line-height: 14px;
+  padding-top: 1px
 }
 
 .nokian2 .name_brand {
   margin-top: 25px;
   margin-bottom: 16px;
+  margin-left: 1px;
 }
 
 .nokian3 .name_brand {
   margin-left: 2px;
+  padding-top: 1px;
+}
+
+.hankook1 .name_brand {
+  line-height: 14px;
 }
 
 .hankook3 .name_brand {
@@ -539,12 +546,15 @@ main {
   margin-left: 1px;
   letter-spacing: 0.3px;
   line-height: 14px;
+  padding-top: 1px;
 }
 
 .hankook1 .type {
   margin-left: -1px;
   letter-spacing: 0.1px;
-  line-height: 16px;
+  line-height: 14px;
+  /*padding-bottom: 5px;*/
+
 }
 
 .hankook2 .type {
@@ -564,20 +574,56 @@ main {
   font-weight: bold;
   font-style: italic;
   margin-top: 3px;
-  margin-left: 22px;
+  margin-left: 13px;
   margin-bottom: 26px;
-  letter-spacing: 0.3px;
   text-align: center;
   letter-spacing: 1.5px;
 }
 
-.hankook1 .price {
-  margin-bottom: 25px;
-  margin-top: 3px;
+.price span {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.goodyear .price span {
+  margin-left: -2px;
+}
+.goodyear1 .price {
+  margin-top: 1px;
+}
+
+.goodyear .price {
+  margin-left: 9px;
+}
+
+.goodyear2 .price {
+  margin-top: 2px;
+}
+
+.goodyear3 .price {
+  margin-bottom: 23px;
+  margin-top: 6px;
+}
+
+.nokian1 .price {
+  margin-bottom: 24px;
 }
 
 .nokian3 .price {
   margin-top: 6px;
+}
+
+.hankook1 .price {
+  margin-bottom: 26px;
+  margin-top: 2px;
+}
+
+.hankook2 .price {
+  margin-bottom: 28px;
+  margin-top: 4px;
+}
+
+.hankook3 .price {
+  margin-top: 5px;
 }
 
 figure div a {
@@ -591,7 +637,7 @@ figure div a {
 }
 
 .goodyear figure div a {
-  background-position: 14px -4px;
+  background-position: 12px -4px;
 }
 
 .nokian figure div a {
@@ -683,49 +729,49 @@ figure div a {
 .tavo {
   width: 98px;
   height: 25px;
-  background-position: -3px 0;
+  background-position: -3px -2px;
 }
 
 .ridgestone {
   width: 97px;
   height: 25px;
-  background-position: -100px 0;
+  background-position: -100px -2px;
 }
 
 .continental {
   width: 92px;
   height: 25px;
-  background-position: -198px 0;
+  background-position: -198px -2px;
 }
 
 .cooper {
   width: 71px;
   height: 25px;
-  background-position: -290px 0;
+  background-position: -290px -2px;
 }
 
 .avon {
   width: 85px;
   height: 25px;
-  background-position: -361px 0;
+  background-position: -361px -2px;
 }
 
 .tire_factory {
   width: 70px;
   height: 30px;
-  background-position: -445px 4px;
+  background-position: -445px 2px;
 }
 
 .pirelli {
   width: 80px;
   height: 25px;
-  background-position: -516px 0;
+  background-position: -516px -2px;
 }
 
 .dunlop {
   width: 78px;
   height: 25px;
-  background-position: -595px 0;
+  background-position: -595px -2px;
 }
 
 /*FOOTER*/
@@ -741,7 +787,7 @@ footer ul{
 }
 
 footer li {
-  margin-top: 13px;
+  margin-top: 11px;
 }
 
 footer a {
