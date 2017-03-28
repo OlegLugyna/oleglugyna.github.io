@@ -18,7 +18,7 @@ body {
 
 /*HEADER*/
 header {
-text-align: left;
+  text-align: left;
 }
 
 .main_line {
@@ -135,7 +135,7 @@ text-align: left;
   right: 117px;
 }
 
-.fogot_pass {
+.fogot_password {
   position: absolute;
   top: -1px;
   right: 5px;
@@ -156,7 +156,7 @@ text-align: left;
   letter-spacing: 0.45px;
 }
 
-.fogot_pass a {
+.fogot_password a {
   color: #fff;
   font-size: 12px;
   font-family: 'lucida_sans_unicoderegular', sans-serif;
