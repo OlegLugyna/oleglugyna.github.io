@@ -5,3 +5,14 @@
 
 
 /*HEADER*/
+
+
+.news__logo {
+  width: 150px;
+  height: 25px;
+  border: 1px solid red;
+}
+.news__logo>img {
+  width: 100%;
+  height: 100%;
+}
