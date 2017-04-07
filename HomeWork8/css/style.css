@@ -785,6 +785,8 @@ font-size: 18px;
 
   .blog__button {
     padding: 75px 0 75px;
+    width: 400px;
+    text-align: center;
   }
 
   .posts {
@@ -1075,7 +1077,9 @@ font-size: 18px;
   }
 
   .blog__button {
+    width: 195px;
     padding: 75px 0 75px;
+    text-align: right;
   }
 
   .posts {
