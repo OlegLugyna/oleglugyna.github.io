@@ -145,7 +145,8 @@ body {
   color:#d6d4d7;
 }
 
-.button {
+.button,
+.button-blog {
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -155,18 +156,32 @@ body {
   padding: 82px 0 70px;
 }
 
-.button__item {
-  width: 15px;
-  height: 15px;
-  background-color: #69646f;
-  border-radius: 50%;
+.slider__button .button__item {
+  display: inline-block;
+  list-style: none;
 }
 
-.button__item--active {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  border-radius:50%;
+.slider__button .radio__label {
+  display: block;
+}
+
+.slider__button .radio__label::before {
+  display: block;
+  content: "";
+  border: 4px solid #3a3942;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  margin-right: 7px;
+  background: #3a3942;
+}
+
+.slider__button .radio__btm {
+  visibility: hidden;
+}
+
+.slider__button .radio__btm:checked~.radio__label::before {
+  background: #fff;
 }
 
 .slider {
@@ -317,6 +332,34 @@ body {
 .blog__button {
   width: 50%;
   padding: 60px 0 53px;
+}
+
+.blog__button .button-blog__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.blog__button .radio-blog__label {
+  display: block;
+}
+
+.blog__button .radio-blog__label::before {
+  display: block;
+  content: "";
+  border: 4px solid #fff;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  margin-right: 7px;
+  background: #fff;
+}
+
+.blog__button .radio-blog__btm {
+  visibility: hidden;
+}
+
+.radio-blog__btm:checked~.radio-blog__label::before {
+  background: #5a5a5a;
 }
 
 .posts {

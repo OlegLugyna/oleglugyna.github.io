@@ -85,10 +85,24 @@
         </div>
       </div>
       <div class="slider__button button">
-        <button class="button__item"></button>
-        <button class="button__item button__item--active"></button>
-        <button class="button__item"></button>
-        <button class="button__item"></button>
+        <ul class="button__list">
+          <li class="button__item radio">
+            <input type="radio" class="radio__btm" name="choise-slider" id="a-position">
+            <label for="a-position" class="radio__label"></label>
+          </li>
+          <li class="button__item">
+            <input type="radio" class="radio__btm" name="choise-slider" id="b-position" checked>
+            <label for="b-position" class="radio__label"></label>
+          </li>
+          <li class="button__item">
+            <input type="radio" class="radio__btm" name="choise-slider" id="c-position">
+            <label for="c-position" class="radio__label"></label>
+          </li>
+          <li class="button__item">
+              <input type="radio" class="radio__btm" name="choise-slider" id="d-position">
+              <label for="d-position" class="radio__label"></label>
+          </li>
+        </ul>
       </div>
     </div> <!-- header -->
     <div class="about">
@@ -128,11 +142,24 @@
             <p class="blog__start-here">STARTS HERE</p>
             <p class="blog__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae <!--lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”--></p>
           </div>
-          <div class="blog__button button">
-            <button class="button__item button__item--active"></button>
-            <button class="button__item "></button>
-            <button class="button__item button__item--active"></button>
-            <button class="button__item button__item--active"></button>
+          <div class="blog__button button-blog">
+            <ul class="button-blog__list">
+              <li class="button-blog__item radio-blog">
+                <input type="radio" class="radio-blog__btm" name="choise-blog" id="ab-position">
+                <label for="ab-position" class="radio-blog__label"></label>
+              </li>
+              <li class="button-blog__item">
+                <input type="radio" class="radio-blog__btm" name="choise-blog" id="bb-position" checked>
+                <label for="bb-position" class="radio-blog__label"></label>
+              </li>
+              <li class="button-blog__item">
+                <input type="radio" class="radio-blog__btm" name="choise-blog" id="cb-position">
+                <label for="cb-position" class="radio-blog__label"></label>
+              </li>
+              <li class="button-blog__item">
+                  <input type="radio" class="radio-blog__btm" name="choise-blog" id="db-position">
+                  <label for="db-position" class="radio-blog__label"></label>
+              </li>
           </div>
         </section>
           <section class="posts__updates posts">
