@@ -1539,23 +1539,27 @@ body {
       visibility: hidden;
     }
 
+    .slider {
+      position: static;
+    }
+
+    .header-wrapper {
+      position: relative;
+    }
+
     .slider__link--prev {
-      left: -170px;
+      left: 10px;
       top: 170px;
-      position: absolute;
-      z-index: 100;
     }
 
     .slider__link--next {
-      right: -170px;
+      right: 10px;
       top: 170px;
       background-position: -46px 0;
-      position: absolute;
-      z-index: 100;
     }
 
     .slider__button {
-      width: 85%;
+      width: 76%;
       margin: 0;
       text-align: right;
     }
@@ -1565,7 +1569,6 @@ body {
     }
 
     /*about*/
-
     .about__container {
       padding-top: 70px;
       width: 960px;
