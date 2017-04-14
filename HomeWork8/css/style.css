@@ -564,7 +564,7 @@ body {
   .blog__name,
   .blog__start-here {
     display: inline-block;
-    width: 24%;
+    width: 85px;
   }
 
   .blog__start-here {
@@ -1099,7 +1099,7 @@ body {
   }
 
   .slide__link {
-    width: 26.7%;
+    width: 28%;
     height: 370px;
     background-image: url('../img/Iphone.png');
     background-repeat: no-repeat;
@@ -1204,6 +1204,16 @@ body {
     margin-left: 32px;
   }
 
+  .blog__name,
+  .blog__start-here {
+    display: inline-block;
+    width: 85px;
+  }
+
+  .blog__start-here {
+    margin: 0;
+  }
+
   .blog__text {
     width:87%;
     background-color: #fff;
@@ -1290,7 +1300,7 @@ body {
   }
 
   .news__logo {
-    width: 135px;
+    width: 120px;
     height: 35px;
     background-image: url('../img/logo_small.png');
     background-repeat: no-repeat;
@@ -1512,7 +1522,7 @@ body {
     }
 
     .slide__link {
-      width: 26.7%;
+      width: 20%;
       height: 370px;
       background-image: url('../img/Iphone.png');
       background-repeat: no-repeat;
@@ -1615,6 +1625,16 @@ body {
     .blog {
       width: 100%;
       margin-left: 32px;
+    }
+
+    .blog__name,
+    .blog__start-here {
+      display: inline-block;
+      width: 85px;
+    }
+
+    .blog__start-here {
+      margin: 0;
     }
 
     .blog__text {
