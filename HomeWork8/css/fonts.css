@@ -2,40 +2,40 @@
 
 @font-face {
 	font-family: 'Open Sans Extrabold';
-	src: url('OpenSans-Extrabold.eot');
-	src: url('OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
-		url('OpenSans-Extrabold.woff') format('woff'),
-		url('OpenSans-Extrabold.ttf') format('truetype');
+	src: url('../fonts/OpenSans-Extrabold.eot');
+	src: url('../fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Extrabold.woff') format('woff'),
+		url('../fonts/OpenSans-Extrabold.ttf') format('truetype');
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Open Sans';
-	src: url('OpenSans-Light.eot');
-	src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-		url('OpenSans-Light.woff') format('woff'),
-		url('OpenSans-Light.ttf') format('truetype');
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Light.woff') format('woff'),
+		url('../fonts/OpenSans-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'League Gothic';
-	src: url('LeagueGothic.eot');
-	src: url('LeagueGothic.eot?#iefix') format('embedded-opentype'),
-		url('LeagueGothic.woff') format('woff'),
-		url('LeagueGothic.ttf') format('truetype');
+	src: url('../fonts/LeagueGothic.eot');
+	src: url('../fonts/LeagueGothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/LeagueGothic.woff') format('woff'),
+		url('../fonts/LeagueGothic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Georgia';
-	src: url('Georgia.eot');
-	src: url('Georgia.eot?#iefix') format('embedded-opentype'),
-		url('Georgia.woff') format('woff'),
-		url('Georgia.ttf') format('truetype');
+	src: url('../fonts/Georgia.eot');
+	src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia.woff') format('woff'),
+		url('../fonts/Georgia.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
