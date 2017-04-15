@@ -543,11 +543,11 @@ body {
   }
 
   .slide__link {
-    width: 38.5%;
-    height: 255px;
+    width: 33%;
+    height: 250px;
     background-image: url('../img/Iphone.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     float: right;
     position: absolute;
     right: 35px;
@@ -765,14 +765,23 @@ body {
     display: block;
     margin-top: 40px;
     margin-bottom: 80px;
+    width: 85%;
+  }
+
+  .header__menu-line .menu-line__list {
+    text-align: justify;
+    font-size: 0;
+  }
+
+  .header__menu-line .menu-line__list::after {
+    display: inline-block;
+    content: '';
+    height: 0;
+    width: 100%;
   }
 
   .menu-line__link {
     font-size: 24px;
-  }
-
-  .header__menu-line .menu-line__item {
-    margin-right: 50px;
   }
 
   .header__menu-line .menu-line__link:hover {
@@ -799,14 +808,14 @@ body {
   }
 
   .slide__link {
-    width: 35%;
-    height: 370px;
+    width: 27%;
+    height: 406px;
     background-image: url('../img/Iphone.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     right: 45px;
-    top: -22px;
+    top: -10px;
   }
 
   .slider__list::after {
@@ -1068,14 +1077,22 @@ body {
   }
 
   .header__menu-line {
-    display: inline-block;
-    margin: 67px 26px 0 0;
+    display: block;
+    margin-top: 67px;
     float: right;
-    position: static;
+    width: 64%;
   }
 
-  .menu-line__item:last-child {
-    margin: 0;
+  .header__menu-line .menu-line__list {
+    text-align: justify;
+    font-size: 0;
+  }
+
+  .header__menu-line .menu-line__list::after {
+    display: inline-block;
+    content: '';
+    height: 0;
+    width: 100%;
   }
 
   .menu-line__link {
@@ -1091,10 +1108,6 @@ body {
     display: block;
     height: 0;
     visibility: hidden;
-  }
-
-  .header__menu-line .menu-line__item {
-    margin-right: 65px;
   }
 
   .header__menu-line .menu-line__link:hover {
@@ -1143,14 +1156,14 @@ body {
   }
 
   .slide__link {
-    width: 28%;
-    height: 370px;
+    width: 27%;
+    height: 406px;
     background-image: url('../img/Iphone.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     right: 45px;
-    top: -22px;
+    top: -10px;
   }
 
   .slider__list::after {
@@ -1484,14 +1497,22 @@ body {
     }
 
     .header__menu-line {
-      display: inline-block;
-      margin: 67px 26px 0 0;
+      display: block;
+      margin-top: 67px;
       float: right;
-      position: static;
+      width: 64%;
     }
 
-    .menu-line__item:last-child {
-      margin: 0;
+    .header__menu-line .menu-line__list {
+      text-align: justify;
+      font-size: 0;
+    }
+
+    .header__menu-line .menu-line__list::after {
+      display: inline-block;
+      content: '';
+      height: 0;
+      width: 100%;
     }
 
     .menu-line__link {
@@ -1507,10 +1528,6 @@ body {
       display: block;
       height: 0;
       visibility: hidden;
-    }
-
-    .header__menu-line .menu-line__item {
-      margin-right: 65px;
     }
 
     .header__menu-line .menu-line__link:hover {
@@ -1564,14 +1581,14 @@ body {
     }
 
     .slide__link {
-      width: 29%;
-      height: 380px;
+      width: 27%;
+      height: 406px;
       background-image: url('../img/Iphone.png');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       position: absolute;
       right: 45px;
-      top: -22px;
+      top: -10px;
     }
 
     .slider__list::after {
