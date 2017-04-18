@@ -967,12 +967,12 @@ body {
   }
 
   .list {
-    padding-bottom: 94px;
+    padding: 0 15px 94px 0;
   }
 
   .partners {
     width: 100%;
-    padding: 28px 0 0 20px;
+    padding: 28px 10px 0 20px;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     background-color: #fff;
