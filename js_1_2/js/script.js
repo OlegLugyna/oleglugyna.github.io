@@ -36,55 +36,20 @@
 
   function finalCalculation () {
 
-    var x = getInput('Введите цeлое число Х - основание степени', '');
+    var baseInput = getInput('Введите цeлое число Х - основание степени', '');
 
-    var n = getInput('Введите целое число N - показатель (экспоненту) степени', '');
+    var exponInput = getInput('Введите целое число N - показатель (экспоненту) степени', '');
 
-      if (n < 0) {
-        return console.log (1/exponentiation (x, n*-1));
+      if (exponInput < 0) {
+        return console.log (1/exponentiation (baseInput, exponInput*-1));
 
       } else {
-        return console.log (exponentiation (x, n));
+        return console.log (exponentiation (baseInput, exponInput));
       }
   }
 
   finalCalculation();
 })();
-
-
-
-/* = Самое первое решение задачи (Эмоциональное)=
-(function () {
-  'use strict'
-
-  function exponentiation () {
-
-    if (n!==0) {
-      var arr = [];
-      for (var i = 0; i < n; i++) {
-        arr[i] = x;
-      }
-
-      var y = arr [0];
-      for (var j = 1; j < arr.length; j++) {
-        y = y * arr[j];
-      }
-
-      return y;
-
-    } else {
-      return 1;
-      }
-  }
-
-  var x = +prompt ('Введите целое число X - основание степени: ', ' ');
-  var n = +prompt ('Введите целое число N - показатель степени: ', ' ');
-    if (n < 0) {
-      alert ('Введите число большее нуля!');
-    } else {
-      console.log ( exponentiation(x,n).toLocaleString() );
-    }
-})();*/
 
 confirm ('Вторая задача?');
 
@@ -96,27 +61,46 @@ confirm ('Вторая задача?');
 
   function succesLogin (nameUser) {
     var arr = new Array(5);
+    var  dataNames;
 
       for (var i = 0; i < arr.length; i++) {
         arr[i] = prompt ('Введите имя: ', ' ');
         arr[i] = arr[i].toLowerCase();
+
+          if ( (arr[i] === ' ') || (arr[i] === null) ) {
+
+            alert ('Неправильный формат ввода имени!');
+            dataNames = false;
+            break;
+
+          } else {
+
+            dataNames = true;
+
+          }
       }
 
-      nameUser = prompt ('Введите имя пользователя: ', ' ');
+      if (dataNames) {
+        nameUser = prompt ('Введите имя пользователя: ', ' ');
+        nameUser = nameUser.toLowerCase();
 
-      nameUser = nameUser.toLowerCase();
+        if ( (nameUser === ' ') || (nameUser === null) ) {
+          alert ('Неправильный формат ввода имени пользователя!');
 
-    for (var j = 0; j <= arr.length; j++) {
-      arr[j] === nameUser;
+        } else {
 
-        if (arr[j] === nameUser) {
-          alert (nameUser[0].toUpperCase() + nameUser.substring(1).toLowerCase() + ', Вы успешно вошли.');
+          for (var j = 0; j <= arr.length; j++) {
+            arr[j] === nameUser;
 
-         return;
-       }
-    }
+              if (arr[j] === nameUser) {
+                alert (nameUser[0].toUpperCase() + nameUser.substring(1).toLowerCase() + ', Вы успешно вошли.');
+                return;
+              }
+          }
 
-    alert ('Вы не верно ввели имя пользователя!');
+          alert ('Вы не верно ввели имя пользователя!');
+        }
+      }
   }
 
   succesLogin ();
