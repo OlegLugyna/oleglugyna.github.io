@@ -1,0 +1,27 @@
+<p>Вопрос №1</p>
+<form>
+<input type="checkbox" id="q1_a1"
+<label for="q1_a1">Вариант ответа №1</label>
+<input type="checkbox" id="q1_a2"
+<label for="q1_a2">Вариант ответа №2</label>
+<input type="checkbox" id="q1_a3"
+<label for="q1_a3">Вариант ответа №3</label>
+</form>
+<p>Вопрос №2</p>
+<form>
+<input type="checkbox" id="q2_a1"
+<label for="q2_a1">Вариант ответа №1</label>
+<input type="checkbox" id="q2_a2"
+<label for="q2_a2">Вариант ответа №2</label>
+<input type="checkbox" id="q2_a3"
+<label for="q2_a3">Вариант ответа №3</label>
+</form>
+<p>Вопрос №3</p>
+<form>
+<input type="checkbox" id="q3_a1"
+<label for="q3_a1">Вариант ответа №1</label>
+<input type="checkbox" id="q3_a2"
+<label for="q3_a2">Вариант ответа №2</label>
+<input type="checkbox" id="q3_a3"
+<label for="q3_a3">Вариант ответа №3</label>
+</form>
