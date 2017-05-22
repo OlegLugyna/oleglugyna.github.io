@@ -53,7 +53,7 @@
                 label.appendChild(input);
 
                 var span = document.createElement('span');
-                span.appendChild(document.createTextNode(test.data.questions[i].answers[j]));
+                span.appendChild(document.createTextNode(this.data.questions[i].answers[j]));
                 label.appendChild(span);
 
                 var br = document.createElement('br');
