@@ -4,13 +4,44 @@
   var start = Date.now();
 
 
+
   function updateTime() {
       var root = document.getElementById('root');
+      var milliSeconds = document.querySelector('.milli_seconds');
       var timeOut = Date.now();
       var timerIndicator = (timeOut - start);
-      root.className='time_elem';
-      root.innerHTML = timerIndicator;
-      //clearInterval(end);
+      //root.className='time_elem';
+      var timeMilliSeconds = new Date(timerIndicator).getMilliseconds();
+      milliSeconds.innerHTML=timeMilliSeconds;
+
+      var hours = document.querySelector('.hours');
+      var timeHour = new Date(timerIndicator).getHours()-2;
+
+        if(timeHour<10) {
+            hours.innerHTML = '0'+timeHour;
+        } else {
+          hours.innerHTML =  timeHour;
+        }
+
+
+      var minutes = root.querySelector('.minutes');
+      var timeMin = new Date (timerIndicator).getMinutes();
+
+        if (timeMin<10) {
+          minutes.innerHTML = '0'+timeMin;
+        } else {
+          minutes.innerHTML = timeMin;
+        }
+
+
+      var seconds = document.querySelector('.seconds');
+      var timeSec = new Date(timerIndicator).getSeconds();
+
+        if (timeSec<10) {
+          seconds.innerHTML = '0'+timeSec;
+        } else {
+          seconds.innerHTML = timeSec;
+        }
   }
 
 
@@ -19,13 +50,21 @@
 
 
   //function buttonStart () {
-  var forButton = document.getElementById('for-button');
+  var buttonStart = document.querySelector('.button__start');
+     var button1 = document.createElement('button');
+     button1.innerHTML='START';
+     button1.className='button';
+     button1.setAttribute('type', 'submit');
+     button1.setAttribute('formaction', '#');
+     buttonStart.appendChild(button1);
+
+     var buttonClear = document.querySelector('.button__clear');
      var button = document.createElement('button');
-     button.innerHTML='START';
+     button.innerHTML='CLEAR';
      button.className='button';
      button.setAttribute('type', 'submit');
      button.setAttribute('formaction', '#');
-     forButton.appendChild(button);
+     buttonClear.appendChild(button);
 
 
    //}
