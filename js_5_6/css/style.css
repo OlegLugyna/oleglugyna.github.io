@@ -1,0 +1,57 @@
+* {
+  border: 0;
+  outline: none;
+}
+
+.minutes,
+.hours,
+.seconds {
+  width: 50px;
+  height: 50px;
+  font-size: 3.5rem;
+  line-height: 0.9;
+}
+
+
+.milli_seconds {
+  width: 200px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.colon {
+  font-size: 5rem;
+  height: 50px;
+  width: 20px;
+  line-height: 0.4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 55px;
+  border: 3px solid black;
+  margin: 0 auto;
+  padding-top:5px;
+  border-radius: 30px;
+}
+
+.container__button {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  margin:0 10px 0 10px;
+  border: 2px solid black;
+}

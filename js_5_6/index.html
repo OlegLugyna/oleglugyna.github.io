@@ -5,37 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HomeWork_JS 5-6</title>
+  <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
   <div id="root">
     <div class="container">
-    <div class="hours"></div>
-    <div class="minutes"></div>
-    <div class="seconds"></div>
-    <div class="milli_seconds"></div>
+      <div class="hours"></div>
+      <div class="colon"></div>
+      <div class="minutes"></div>
+      <div class="colon"></div>
+      <div class="seconds"></div>
     </div>
-
-    <div class="button__start"></div>
-    <div class="button__clear"></div>
-
-
+    <div class="milli_seconds"></div>
+    <div class="container__button">
+      <div class="button__start"></div>
+      <div class="button__clear"></div>
+    </div>
   </div>
-
-  <style media="screen">
-    .button {
-      margin-top: 50px;
-    }
-    .minutes, .hours, .seconds, .milli_seconds {
-      width: 50px;
-      height: 50px;
-      border: 1px solid red;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-    }
-  </style>
-
   <script src="js/script.js"></script>
 </body>
 </html>
