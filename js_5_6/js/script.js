@@ -1,12 +1,31 @@
 (function() {
   'use strict'
 
-  var start = Date.now();
-  var timerIndicator = 0;
 
   var colon = document.querySelectorAll('.colon');
-  colon[0].innerHTML=':';
-  colon[1].innerHTML=':';
+  colon[0].innerHTML = ':';
+  colon[1].innerHTML = ':';
+
+  function clearTimer () {
+  var hours = document.querySelector('.hours');
+  hours.innerHTML = '00';
+
+  var minutes = document.querySelector('.minutes');
+  minutes.innerHTML = '00';
+
+  var seconds = document.querySelector('.seconds');
+  seconds.innerHTML = '00';
+
+  var milliSeconds = document.querySelector('.milli_seconds');
+  milliSeconds.innerHTML = '00';
+}
+
+clearTimer();
+
+
+
+  var start = Date.now();
+  var timerIndicator = 0;
 
   function updateTime() {
       var root = document.getElementById('root');
@@ -75,6 +94,7 @@
   button.setAttribute('formaction', '#');
   buttonClear.appendChild(button);
   buttonClear.addEventListener('click', stopTimer);
+  buttonClear.addEventListener('click', clearTimer);
 
 })();
 
