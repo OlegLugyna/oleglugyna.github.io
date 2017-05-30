@@ -7,31 +7,28 @@
   colon[1].innerHTML = ':';
 
   function clearTimer () {
-  var hours = document.querySelector('.hours');
-  hours.innerHTML = '00';
+    var hours = document.querySelector('.hours');
+    hours.innerHTML = '00';
 
-  var minutes = document.querySelector('.minutes');
-  minutes.innerHTML = '00';
+    var minutes = document.querySelector('.minutes');
+    minutes.innerHTML = '00';
 
-  var seconds = document.querySelector('.seconds');
-  seconds.innerHTML = '00';
+    var seconds = document.querySelector('.seconds');
+    seconds.innerHTML = '00';
 
-  var milliSeconds = document.querySelector('.milli_seconds');
-  milliSeconds.innerHTML = '00';
-}
+    var milliSeconds = document.querySelector('.milli_seconds');
+    milliSeconds.innerHTML = '00';
+  }
 
-clearTimer();
-
-
+  clearTimer();
 
   var start = Date.now();
-  var timerIndicator = 0;
 
   function updateTime() {
-      var root = document.getElementById('root');
+      //var root = document.getElementById('root');
       var milliSeconds = document.querySelector('.milli_seconds');
       var timeOut = Date.now();
-      timerIndicator = (timeOut - start);
+      var timerIndicator = (timeOut - start);
       //root.className='time_elem';
       var timeMilliSeconds = new Date(timerIndicator).getMilliseconds();
       milliSeconds.innerHTML=timeMilliSeconds;
@@ -44,8 +41,6 @@ clearTimer();
         } else {
           hours.innerHTML =  timeHour;
         }
-
-
 
       var minutes = document.querySelector('.minutes');
       var timeMin = new Date (timerIndicator).getMinutes();
@@ -69,10 +64,12 @@ clearTimer();
   var end;
   function startTimer() {
   end = setInterval(updateTime, 5);
+  start = Date.now();
   }
 
   function stopTimer() {
     clearInterval(end);
+    //return;
   }
 
   var buttonStart = document.querySelector('.button__start');
@@ -97,64 +94,3 @@ clearTimer();
   buttonClear.addEventListener('click', clearTimer);
 
 })();
-
-
-
-// (function() {
-//   'use strict'
-//
-//   function startTime() {
-//   var root = document.getElementById('root');
-//     var startElem = document.createElement('div');
-//     startElem.className='start_elem';
-//     startElem.innerHTML = Date.now();
-//     root.appendChild(startElem);
-//     return Date.now();
-//   }
-//
-//   var start = startTime();
-//   //console.log (start);
-//
-//
-//   function updateTime() {
-//       var root = document.getElementById('root');
-//       // var timeElem = document.createElement ('div');
-//       // timeElem.className='time_elem';
-//       // timeElem.innerHTML = Date.now();
-//       // root.appendChild(timeElem);
-//       //return Date.now();
-//       var timeOut = Date.now();
-//       var timerIndicator = (timeOut - start);
-//       //var timeElem = document.createElement ('div');
-//       root.className='time_elem';
-//       root.innerHTML = timerIndicator;
-//       //root.appendChild(timeElem);
-//
-//       //console.log (timerIndicator);
-//   }
-//
-//
-//     //var end = setInterval(updateTime, 500);
-//
-//
-//
-//
-//
-//     function buttonStart () {
-//     var button = document.createElement('button');
-//     button.innerHTML='START';
-//     button.className='button';
-//     button.setAttribute('type', 'submit');
-//     button.setAttribute('formaction', '#');
-//     root.appendChild(button);
-//
-//
-//   }
-//
-//   //buttonStart();
-//
-//
-//
-//
-//
-// })();
