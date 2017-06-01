@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 100px;
+}
+
+form {
+  width: 50%;
+  outline: 1px solid #000;
+  padding: 10px 10px 70px;
+  margin: 0 auto;
+}
+
+form label {
+  padding: 10px;
+  font-size: 1.5rem;
+  }
+
+input {
+  text-align: right;
+  width: 50%;
+  height: 30px;
+}
+
+fieldset {
+  outline: 1 px solid #000;
+  padding-bottom: 30px;
+}
+
+fieldset div {
+  padding: 10px;
+}
+
+#address {
+  margin-left: 20px;
+}
+
+button {
+  background-color: #eee;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#tooltips {
+  z-index: 9999;
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	opacity: 0.6;
+	border-radius: 5px;
+}
