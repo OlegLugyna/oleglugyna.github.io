@@ -56,12 +56,9 @@ button {
   z-index: 9999;
 	position: absolute;
 	display: none;
-	top: 50%;
-	left: 73%;
-	padding: 5px 10px 5px 10px;
   background-color: #000;
 	color: #fff;
-	/*opacity: 0.6;*/
+	opacity: 0.6;
 	border-radius: 5px;
 }
 
@@ -71,5 +68,18 @@ button {
   padding: 5px 10px 5px 10px;
   background-color: #000;
   transform: traslateY(-50%)translateX(0);
-  /*opacity: 0.6;*/
+  opacity: 0.6;
+}
+
+#tooltips-div {
+  z-index: 9999;
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 73%;
+	padding: 5px 10px 5px 10px;
+  background-color: #000;
+	color: #fff;
+	opacity: 0.6;
+	border-radius: 5px;
 }
