@@ -34,43 +34,26 @@
 
   //форматируем таймер в формат часы-м
   function formatTimer (savedTime) {
-    var timeHour = new Date(savedTime).getHours()-2;
-      if(timeHour<10) {
-          timeHour = '0'+timeHour;
-      } else {
-        timeHour =  timeHour;
-      }
-
-    var timeMin = new Date (savedTime).getMinutes();
-      if (timeMin<10) {
-        timeMin = '0'+timeMin;
-
-      } else {
-        timeMin = timeMin;
-      }
-
-    var timeSec = new Date(savedTime).getSeconds();
-      if (timeSec<10) {
-        timeSec = '0'+timeSec;
-
-      } else {
-        timeSec = timeSec;
-      }
-
+    var timeHour = addZero(new Date(savedTime).getHours()-2);
+    var timeMin = addZero(new Date (savedTime).getMinutes());
+    var timeSec = addZero(new Date(savedTime).getSeconds());
     var timeMilliSeconds = new Date(savedTime).getMilliseconds();
-      if (timeMilliSeconds<10) {
-        timeMilliSeconds = '00'+timeMilliSeconds;
+    if (timeMilliSeconds<10) {
+      timeMilliSeconds = '00'+timeMilliSeconds;
 
-      } else if (timeMilliSeconds<100) {
-        timeMilliSeconds = '0'+timeMilliSeconds;
-
-      } else {
-        timeMilliSeconds = timeMilliSeconds;
-      }
+    } else if (timeMilliSeconds<100) {
+      timeMilliSeconds = '0'+timeMilliSeconds;
+    }
 
     var totalTime = timeHour + ':' + timeMin + ':' + timeSec + ':' + timeMilliSeconds;
-    console.log (totalTime);
     return totalTime;
+  }
+
+  function addZero (dataTimer) {
+    if (dataTimer<10) {
+      dataTimer = '0'+dataTimer;
+    }
+    return dataTimer;
   }
 
   function createTimer (onTimeChange) {
