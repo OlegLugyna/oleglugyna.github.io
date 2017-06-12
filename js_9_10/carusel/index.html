@@ -4,33 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home Work 8-9</title>
+  <title>Home Work 09_10</title>
   <link rel="stylesheet" href="css/tinycarousel.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/selectric.css" type="text/css" media="screen"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/jquery.tinycarousel.js"></script>
-  <script src ="js/script.js"></script>
+  <script src="js/js_carusel/jquery.tinycarousel.js"></script>
+  <script src ="js/js_carusel/script.js"></script>
+  <script src="js/js_select/jquery.selectric.js"></script>
+  <script src ="js/js_select/script.js"></script>
+  <script src="js/js_checkbox/jquery.checkbox.js"></script>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-
-  <div id="slider1">
-		<a class="buttons prev" href="#">&#60;</a>
-		<div class="viewport">
-			<ul class="overview">
-				<li><img src="img/picture6.jpg" /></li>
-				<li><img src="img/picture5.jpg" /></li>
-				<li><img src="img/picture4.jpg" /></li>
-				<li><img src="img/picture3.jpg" /></li>
-				<li><img src="img/picture2.jpg" /></li>
-				<li><img src="img/kaligula.jpg" /></li>
-				<li><img src="img/shors.jpg" /></li>
-				<li><img src="img/mark_avreliy.jpg" /></li>
-				<li><img src="img/picture1.jpg" /></li>
-			</ul>
-		</div>
-		<a class="buttons next" href="#">&#62;</a>
-	</div>
-
+  <div class="wrapper_left">
+  <div class="carusel_container">
+    <div id="slider1">
+  		<a class="buttons prev" href="#">&#60;</a>
+  		<div class="viewport">
+  			<ul class="overview">
+  				<li><img src="img/picture6.jpg" /></li>
+  				<li><img src="img/picture5.jpg" /></li>
+  				<li><img src="img/picture4.jpg" /></li>
+  				<li><img src="img/picture3.jpg" /></li>
+  				<li><img src="img/picture2.jpg" /></li>
+  				<li><img src="img/kaligula.jpg" /></li>
+  				<li><img src="img/shors.jpg" /></li>
+  				<li><img src="img/mark_avreliy.jpg" /></li>
+  				<li><img src="img/picture1.jpg" /></li>
+  			</ul>
+  		</div>
+  		<a class="buttons next" href="#">&#62;</a>
+  	</div>
+  </div>
+  <div class="select_container">
+    <select>
+      <option value=""><strong>Select with disabled options</strong></option>
+      <option disabled value="apple">Apple</option>
+      <option disabled value="apricot">Apricot</option>
+      <option disabled value="banana">Banana</option>
+      <option value="bilberry">Bilberry</option>
+      <option value="blackberry">Blackberry</option>
+      <option value="blackcurrant">Blackcurrant</option>
+      <option disabled value="blueberry">Blueberry</option>
+      <option value="cantaloupe">Cantaloupe</option>
+      <option value="cherimoya">Cherimoya</option>
+      <option disabled value="cherry">Cherry</option>
+      <option value="clementine">Clementine</option>
+      <option value="coconut">Coconut</option>
+      <option value="currant">Currant</option>
+      <option disabled value="damson">Damson</option>
+      <option value="date">Date</option>
+      <option value="durian">Durian</option>
+      <option value="elderberry">Elderberry</option>
+      <option value="feijoa">Feijoa</option>
+      <option value="fig">Fig</option>
+      <option value="gooseberry">Gooseberry</option>
+      <option value="grape">Grape</option>
+      <option disabled value="grapefruit">Grapefruit</option>
+      <option value="honeydew">Honeydew</option>
+      <option value="huckleberry">Huckleberry</option>
+      <option value="jackfruit">Jackfruit</option>
+      <option value="jambul">Jambul</option>
+      <option value="jujube">Jujube</option>
+      <option value="kiwifruit">Kiwifruit</option>
+      <option value="kumquat">Kumquat</option>
+      <option disabled value="lemon">Lemon</option>
+      <option value="lime">Lime</option>
+      <option disabled value="loquat">Loquat</option>
+      <option disabled value="lychee">Lychee</option>
+      <option disabled value="mango">Mango</option>
+      <option value="mangostine">Mangostine</option>
+      <option value="melon">Melon</option>
+      <option value="nectarine">Nectarine</option>
+      <option disabled value="orange">Orange</option>
+      <option value="passionfruit">Passionfruit</option>
+      <option value="peach">Peach</option>
+      <option value="pear">Pear</option>
+    </select>
+  </div>
+  </div>
+  <div class="wrapper_right">
+  <div class="checkbox_container">
+    <div class="wrapper_checkbox">
+      <div>
+        <label for="ch1">Checkbox 1</label>
+        <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+      </div>
+      <div>
+        <label for="ch2">Checkbox 2</label>
+        <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+    </div>
+    <div>
+      <label for="ch3">Checkbox 3</label>
+      <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+    </div>
+    <div>
+      <label for="ch4">Checkbox 4</label>
+      <input type="checkbox" class="niceCheck"  id="ch4" tabindex="1" value="2"/>
+    </div>
+    <div>
+      <label for="ch5">Checkbox 5</label>
+      <input type="checkbox" class="niceCheck" id="ch5" disabled="disabled"/>
+    </div>
+  </div>
+</div>
+<div class="checkbox-css_container">
+  <div class="checkbox-css_wrapper">
+    <div>
+      <input type="checkbox" id="test-check1"/>
+      <label for="test-check1">Чекбокс 1:</label>
+    </div>
+    <div>
+      <input type="checkbox" id="test-check2"/>
+      <label for="test-check2">Чекбокс 2:</label>
+    </div>
+    <div>
+      <input type="checkbox" id="test-check3"/>
+      <label for="test-check3">Чекбокс 3:</label>
+    </div>
+    <div>
+      <input type="checkbox" id="test-check4"/>
+      <label for="test-check4">Чекбокс 4:</label>
+    </div>
+    <div>
+      <input type="checkbox" id="test-check5"/>
+      <label for="test-check5">Чекбокс 5:</label>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>

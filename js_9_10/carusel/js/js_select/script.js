@@ -1,3 +1,4 @@
-$(function() {
+$(function()
+{
   $('select, .select').selectric();
 });
