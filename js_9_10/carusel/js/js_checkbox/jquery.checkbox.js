@@ -65,19 +65,19 @@ var el = el,
 	checkTab = el.attr("tabindex"),
     checkValue = el.attr("value");
 	if(checkChecked)
-		el.after("<span class='niceCheck niceChecked'>"+
-			"<input type='checkbox'"+
-			"name='"+checkName+"'"+
-			"id='"+checkId+"'"+
-			"checked='"+checkChecked+"'"+
-            "value='"+checkValue+"'"+
+		el.after("<span class='niceCheck niceChecked'>" +
+			"<input type='checkbox'" +
+			"name='"+checkName+"'" +
+			"id='"+checkId+"'" +
+			"checked='" + checkChecked+"'" +
+            "value='"+checkValue+"'" +
 			"tabindex='"+checkTab+"' /></span>");
 	else
-		el.after("<span class='niceCheck'>"+
-			"<input type='checkbox'"+
-			"name='"+checkName+"'"+
-			"id='"+checkId+"'"+
-             "value='"+checkValue+"'"+
+		el.after("<span class='niceCheck'>" +
+			"<input type='checkbox'" +
+			"name='"+checkName+"'" +
+			"id='"+checkId+"'" +
+      "value='"+checkValue+"'" +
 			"tabindex='"+checkTab+"' /></span>");
 
 	/* если checkbox disabled - добавляем соотвсмтвующи класс для нужного вида и добавляем атрибут disabled для вложенного chekcbox */

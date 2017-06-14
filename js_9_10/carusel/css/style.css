@@ -1,5 +1,5 @@
 body {
-padding: 25px 50px 0;
+  padding: 25px 50px 0;
 }
 
 .wrapper_left {
@@ -98,14 +98,8 @@ select {
 	margin-left: 15px;
 }
 
-.checkbox-css_container input[type=checkbox]:checked +  label:after {
-background-position: -2px -2px;
-}
-
-.heckbox-css_container label:hover:after {
-background-position: -2px -2px;
-}
-
+.checkbox-css_container input[type=checkbox]:checked +  label:after,
+.heckbox-css_container label:hover:after,
 .checkbox-css_container input[type=checkbox]:checked + label:hover:after {
-background-position: -2px -2px;
+  background-position: -2px -2px;
 }

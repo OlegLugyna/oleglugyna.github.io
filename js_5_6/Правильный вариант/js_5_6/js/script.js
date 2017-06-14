@@ -12,10 +12,10 @@
   var $reset2 = document.querySelector('#reset2');
   var $time2 = document.querySelector('#time2');
 
-  // создаем первый таймер
+//создаем первый таймер
   var timer1 = createTimer(function (time) {
-    var timeString = formatTimer(time);
-    $time1.innerHTML = timeString;
+  var timeString = formatTimer(time);
+  $time1.innerHTML = timeString;
   });
 
   $play1.addEventListener('click', timer1.startPause);

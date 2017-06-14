@@ -3,13 +3,12 @@
   $(function() {
     var $linkInput = $('input.input-field');
     $linkInput.click(function(event) {
-      var $title = $(this).attr('title');
+      var $title = $(this).attr('alt');
       // var $wrapperForm = $('.wrapper-form');
       // $wrapperForm.css({'position':'static'});
       var $tooltips = $('#tooltips-div');
       $tooltips.text($title)
                 .css ({
-
                   'top': event.pageY + 5,
                   'left': event.pageX + 10,
                 })
@@ -31,7 +30,7 @@
 
     var $linkButton = $('button');
     $linkButton.on('click',showAllTooltips);
-    var $title = parent().find('.input-field').attr('title');
+    var $title = parent().find('.input-field').attr('alt');
 
     function showAllTooltips() {
 
@@ -42,12 +41,13 @@
           'top': '50%',
           'left': '73%',
       });
-      setTimeout(hideAllTooltips, 2000);
+
+      $linkButton.mouseout(hideAllTooltips);
+      // setTimeout(hideAllTooltips, 1000);
     }
 
     function hideAllTooltips() {
       $('.tooltip').removeClass('visible')
                     .css ({'display':'none'});
     }
-
 });
