@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework 11-12. Template.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container"></div>
+
+
+  <script type="text/tamplate" id="idcard-employees">
+  <div class="wrapper">
+  <article class="article">
+    <h2 class="title"><%- title %></h2>
+    <div class="heider">
+      <i class="photo"><img src="<%- photo %>" alt="#"></i>
+      <p class="name"><%- name %></p>
+      <p class="profession">Position:<br><%- profession %></p>
+    </div>
+    <div class="personal__dates">
+      <p class="birthday">Date of birth:<br><%- birthday %></p>
+      <p class="address">Home address:<br><%- address %></p>
+      <div class="container__phones">Phone numbers:<br>
+        <ul class="tlf">
+
+          <% _.forEach(phones, function(item) { %>
+            <li class="phone-item">
+              <%- item %>
+            </li>
+            <% }); %>
+        </ul>
+      </div>
+      <div class="container__mail">E-mails:<br>
+        <ul class="mail">
+          <% _.forEach(mail, function(item) { %>
+            <li class="phone-item">
+              <%- item %>
+            </li>
+            <% }); %>
+        </ul>
+      </div>
+    </div>
+    <span>Autobiography:</span>
+    <p class="autobiography"><%- autobiography %></p>
+    <span>Social network:</span>
+    <span class="network_link"><a href="<%- network %>">Facebook</a></span>
+    <span>Working from:</span>
+    <span class="startdate"><%- startDate %></span>
+
+    </article>
+    </div>
+  </script>
+
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
