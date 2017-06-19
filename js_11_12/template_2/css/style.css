@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 30px;
+}
+
+#container {
+  margin: 0 auto;
+  background-color: #eee;
+  outline: 6px double #000;
+  width: 70%;
+  padding: 20px;
+}
+
+.wrapper {
+  outline: 3px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.heider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo>img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.name {
+  font-size: 3rem;
+  height: 40px;
+}
+
+.profession {
+  font-size: 1.4rem;
+  background-color: gray;
+  padding: 50px 10px;
+  color:#fff;
+}
+
+.personal__dates {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.birthday {
+  background-color: green;
+  padding: 20px;
+}
+
+.address {
+  background-color: red;
+  padding: 20px 15px;
+}
+
+.container__phones {
+  background-color: purple;
+  padding: 20px;
+}
+
+.container__mail {
+  background-color: blue;
+  padding: 20px;
+}
+
+.mail,
+.tlf {
+  list-style: none;
+}
+
+span {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.autobiography {
+  font-size: 1.2rem;
+  background-color: #ccc;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.network_link,
+.startdate {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-right: 50px;
+  text-decoration: none;
+}

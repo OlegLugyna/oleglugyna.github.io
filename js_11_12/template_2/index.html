@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework 11-12. Template.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container"></div>
+
+  <script type="text/template" id="idcard-employees">
+  <% _.forEach (data, function(item) { %>
+    <div class="wrapper">
+      <article class="article">
+        <h2 class="title"><%- item.title %></h2>
+        <div class="heider">
+          <i class="photo"><img src="<%- item.photo %>" alt="#"></i>
+          <p class="name"><%- item.name %></p>
+          <p class="profession">Position:<br><%- item.profession %></p>
+        </div>
+        <div class="personal__dates">
+          <p class="birthday">Date of birth:<br><%- item.birthday %></p>
+          <p class="address">Home address:<br><%- item.address %></p>
+          <div class="container__phones">Phone numbers:<br>
+            <ul class="tlf">
+
+              <% _.forEach(item.phones, function(item) { %>
+                <li class="phone-item">
+                  <%- item %>
+                </li>
+                <% }); %>
+            </ul>
+          </div>
+          <div class="container__mail">E-mails:<br>
+            <ul class="mail">
+              <% _.forEach(item.mail, function(item) { %>
+                <li class="phone-item">
+                  <%- item %>
+                </li>
+                <% }); %>
+            </ul>
+          </div>
+        </div>
+        <span>Autobiography:</span>
+        <p class="autobiography"><%- item.autobiography %></p>
+        <span>Social network:</span>
+        <span class="network_link"><a href="<%- item.network %>">Facebook</a></span>
+        <span>Working from:</span>
+        <span class="startdate"><%- item.startDate %></span>
+      </article>
+    </div>
+  <% }) %>
+  </script>
+
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
