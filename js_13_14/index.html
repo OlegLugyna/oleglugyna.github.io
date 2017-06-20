@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework 13_14</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="root"></div>
+
+
+
+  <script type="text/template" id="test__template">
+
+    <article class="article">
+      <h1 class="caption"><%- data.caption %></h1>
+      <div class="block">
+        <% _.forEach(data.questions, function(item) { %>
+          <h2 class="title"><%- item.title %></h2>
+          <form class="form">
+            <ul class="answers__list">
+              <% _.forEach(item.answers, function(itemsAnswer) { %>
+                <li class="answers__item">
+                  <label>
+                    <input type="checkbox"><span><%- itemsAnswer %></span>
+                  </label>
+                </li>
+              <% }); %>
+            </ul>
+          </form>
+
+        <% }); %>
+      </div>
+
+    </article>
+
+  </script>
+
+
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script type="text/javascript" src="js\script.js"></script>
+</body>
+</html>
