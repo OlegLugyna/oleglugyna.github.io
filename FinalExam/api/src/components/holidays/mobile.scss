@@ -1,0 +1,74 @@
+& {
+    &__title {
+        text-align: center;
+        padding: rem(40) 0 rem(20);
+    }
+
+    &__wrapper {
+
+        .figure {
+            margin-bottom: rem(10);
+            position: relative;
+            
+            .contant {
+
+                .jcarousel {
+                
+                    &__image {
+                        display: block;
+                        width: 93.75%;   
+                        height: rem(240);
+                        margin: 0 auto;
+
+                        img {
+                            display: block;
+                            width: 100%;   
+                            max-height: rem(240);
+                        }
+                    }
+
+                    &__image--none {
+                        display: none;
+                    }
+                }
+
+                .jcarousel-prev {
+                    display: none;
+                }
+
+                .jcarousel-next {
+                    display: none;
+                }    
+            }
+
+            .caption {
+                width: 81.25%;
+                margin: 0 auto;
+                padding-left: rem(20);
+                color: $white;
+                position: absolute;
+                bottom: rem(20);
+                left: 9.5%;
+                
+                &__btn {
+                    line-height: rem(18);
+                    padding: 0 rem(14) 0;
+                    border-radius: rem(10);
+                    background-color: $red;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                }
+
+                &__headline {
+                    padding: rem(18) 0 rem(18);
+                }
+
+                &__text {
+                    @include text;
+                    line-height: rem(15);
+                }
+            }
+        }
+    }
+}

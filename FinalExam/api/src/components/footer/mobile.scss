@@ -1,0 +1,50 @@
+& {
+    padding-bottom: rem(18);
+
+    .container {
+        margin: 0 auto;
+
+        .name {
+
+            &__title {
+            padding: rem(20) 0;
+            text-align: center;
+            color: $red;
+            text-transform: uppercase;
+            }
+        }
+
+        .list {
+
+            &__title {
+                text-align: center;
+                padding-bottom: rem(10);
+            }
+
+            .menu {
+                display: flex;
+                justify-content: center;
+
+                &__link {
+                    margin-right: rem(15);
+                    padding-bottom: rem(20);
+
+                    a {
+                        text-decoration: none;
+                        color: $black-light;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .block {
+            text-align: center;
+            padding-bottom: rem(20);
+        }
+    }
+
+    &__logo {
+        text-align: center;
+    }
+}

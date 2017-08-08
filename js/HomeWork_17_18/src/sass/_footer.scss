@@ -1,0 +1,12 @@
+.s-footer {
+  color: $color_font-white;
+  text-align: center;
+  width: 100vw;
+
+  .s-footer__text {
+    line-height: 1.5625rem;
+    background-color: $color_footer;
+    font-family: $ubuntu;
+    font-size: 0.875rem;
+  }
+}

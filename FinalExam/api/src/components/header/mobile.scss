@@ -1,0 +1,89 @@
+& {
+    background-image: url(../images/main_pic.png);
+    background-repeat: no-repeat;
+    background-position: center, top;
+    background-size: cover;
+    background-color: $bg_main-pic;
+    position: relative;
+    height: rem(542);
+
+    .container {
+
+        &__caption {
+            position: absolute;
+            left: 23%;
+            top: 28%;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                font: rem(20) $montserratBold;
+            }
+        }
+
+        &__signup {
+        height: rem(50);
+        width: 55%;
+        margin: 0 auto;
+        padding-top: rem(20);
+        text-align: center;
+
+            .login__btn {
+                text-decoration: none;
+                color: $white;
+                margin-right: rem(20);
+                font-family: $montserratBold;
+                font-size: rem(14);
+                text-align: center;
+            }
+
+            .signup__btn {
+                text-decoration: none;
+                color: $white;
+                height: rem(37);
+                padding: rem(7) rem(20);
+                border: rem(2) solid $white;
+                font-family: $montserratBold;
+                font-size: rem(14);
+                border-radius: rem(19);
+            }
+        }
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: rem(280);
+        position: absolute;
+        left: 6%;
+        top: 42%;
+
+        &__title {
+            color: $white;
+            font: rem(30) $montserratBold;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: rem(20);
+        }
+
+        &__headline {
+            width: 83%;
+            margin: 0  auto;
+            color:$white;
+            font: rem(18) $robotoLight;
+            text-align: center;
+            padding-bottom: rem(20);
+        }
+
+        &__btn {
+            display: block;
+            padding: rem(15) rem(47);
+            margin: 0 auto;
+            font: rem(14) $montserratBold;
+            border-radius: rem(22);
+            background-color: $red;
+            outline: none;
+            border: 0;
+            color: $white;
+        }
+    }
+}

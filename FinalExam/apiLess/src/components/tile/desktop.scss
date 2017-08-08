@@ -1,0 +1,119 @@
+& {
+
+    &__title {
+        padding: 100px 0 40px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+        .masonry {
+            width: 73%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            .container {
+
+                &__item {
+                    text-align: center;
+                    margin-bottom: rem(20);
+                    position: relatuve;
+
+                    & a {
+                        cursor: pointer;
+                        display: block;
+                        width: rem(300);
+                        height: rem(310);
+
+                        img {
+                            display: block;
+                            width: rem(300);
+                            height: rem(310);
+                        }
+                    }
+                }
+
+                &__item--long {
+
+                    & a {
+                        cursor: pointer;
+                        display: block;
+                        width: rem(620);
+                        height: rem(310);
+
+                        img {
+                            display: block;
+                            width: rem(620);
+                            height: rem(310);
+                        }
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    width: rem(300);
+                    left: center0;
+                    top: 50%;
+                    font-family: $montserratBold;
+                    font-size: rem(22);
+                    color:$white;
+                    text-align: center;
+                }
+
+                &__item--long>p {
+                    width: rem(620);
+                }
+            }
+        }
+
+    .input {
+        padding-bottom: rem(100);
+        border-bottom: rem(4) solid $red;
+
+        &__title {
+        padding: rem(100) 0 rem(40);
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        }
+
+        &__question {
+            @include text;
+            font-size: rem(18);
+            text-align: center;
+            padding-bottom: rem(42);
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__form {
+            @include text;
+            display: inline-block;
+            width: 22.24%;
+            height: rem(40);
+            padding-left: rem(17);
+            border-radius: rem(5);
+            border: rem(2) solid $gray-light;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__btn {
+            display: inline-block;
+            padding: rem(14) rem(26);
+            margin-left: rem(12);
+            border-radius: rem(20);
+            background-color: $red;
+            color: $white;
+            font: rem(14) $montserratBold;
+            cursor: pointer;
+        }
+  }
+}

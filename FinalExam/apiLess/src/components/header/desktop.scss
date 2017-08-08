@@ -1,0 +1,83 @@
+& {
+    background-image: url(../images/main_pic.png);
+    background-repeat: no-repeat;
+    background-position: center, top;
+    background-size: cover;
+    background-color: $bg_main-pic;
+    height: rem(700);
+    padding-top: rem(50);
+
+    .container {
+        display: flex;
+        justify-content:  space-between;
+        width: 70%;
+        margin: 0 auto;
+        line-height: rem(35);
+
+        &__caption {
+
+            a {
+            text-decoration: none;
+            color: $white;
+            font: 20px $montserratBold;
+            }
+        }
+
+        &__signup {
+
+            .login__btn {
+                text-decoration: none;
+                color: $white;
+                margin-right: rem(20);
+                font-family: $montserratBold;
+                font-size: rem(14);
+                text-align: center;
+            }
+
+            .signup__btn {
+                text-decoration: none;
+                color: $white;
+                padding: rem(7) rem(20);
+                border: rem(2) solid $white;
+                font-family: $montserratBold;
+                font-size: rem(14);
+                border-radius: rem(19);
+            }
+        }
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 36.46%;
+        padding-top: rem(170);
+
+        &__title {
+            color: $white;
+            font:rem(52) $montserratBold;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: rem(40);
+            line-height: rem(63);
+        }
+
+        &__headline {
+            color:$white;
+            font: rem(24) $robotoLight;
+            text-align: center;
+            padding-bottom: rem(40);
+        }
+
+        &__btn {
+        display: block;
+        padding: rem(15) rem(47);
+        margin: 0 auto;
+        font: rem(14) $montserratBold;
+        border-radius: rem(22);
+        background-color: $red;
+        outline: none;
+        border: 0;
+        color: $white;
+        cursor: pointer;
+        }
+    }
+}    

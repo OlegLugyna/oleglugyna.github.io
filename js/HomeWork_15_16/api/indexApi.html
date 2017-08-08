@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework 15_16</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="input__container">
+  <h4>Задайте критерии поиска</h4>
+  <input type="text" id="myQuery" placeholder="cat+dog" value="dog+cat">
+  <button class="myBtn">Submit  query</button>
+  </div>
+
+  <h1>Коллекция фотографий</h1>
+  <div id="root">  </div>
+
+  <script type="text/template" id="template">
+    <article class="article">
+      <h2>Фото из коллекции</h2>
+      <div class="container">
+        <img src=<%- img %> alt='picture' />
+        <p> <span>Автор фотографии:&nbsp<%- author %>.</span> </p>
+        <p> <span>Отметили "like":&nbsp<%- favorites %> человек.</span></p>
+        <p><span>Всего просмотрело это фото:&nbsp<%- views %> посетителей.</span></p>
+      </div>
+    </article>
+  </script>
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script type="text/javascript" src="js\script.js"></script>
+</body>
+</html>

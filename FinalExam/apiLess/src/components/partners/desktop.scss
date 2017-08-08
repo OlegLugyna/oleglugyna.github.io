@@ -1,0 +1,124 @@
+& {
+
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        padding: rem(100) 0 rem(40);
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        width: rem(940);
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+
+        .list {
+            
+            .box {
+                position: relative;
+                width: rem(120);
+                margin: 0 auto;
+
+                &__photo {
+                    display: block;
+                    height: rem(120);
+                    width: rem(120);
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }   
+
+                &__photo--1 {
+                    background-image: url(../images/partners/pic_1.png);
+                    background-repeat: no-repeat;
+                }
+            
+                &__photo--2 {
+                    background-image: url(../images/partners/pic_3.png);
+                    background-repeat: no-repeat;
+                }
+            
+                &__photo--3 {
+                    background-image: url(../images/partners/pic_2.png);
+                    background-repeat: no-repeat;
+                }
+
+                &__photo--4 {
+                    background-image: url(../images/partners/pic_4.png);
+                    background-repeat: no-repeat;
+                }
+
+                &__icon {
+                    width: rem(43);
+                    height: rem(43);
+                    border-radius: 50%;
+                    border: rem(5) solid $white;
+                    position: absolute;
+                    bottom: rem(-2);
+                    right: rem(-8);
+                    display: flex;
+
+                    &-item {
+                        display: block;
+                        margin: auto;
+                        fill: $white;;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &-item--cup {
+                        width: rem(25);
+                        height: rem(25);
+                    }
+                }
+
+                &__icon--tv {
+                    background-color: $red;
+                    padding-bottom: rem(5);
+                }
+                
+                &__icon--flask {
+                    background-color: $yellow;
+                    padding-bottom: rem(3);
+                }
+                
+                &__icon--cup {
+                    background-color: $green;
+                }
+                
+                &__icon--plane {
+                    background-color: $blue;
+                }
+            }
+
+            &__name {
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+                padding: rem(20) 0 rem(20);
+            }
+
+            &__text {
+                @include text;
+                width: rem(220);
+                margin: 0 auto;
+                text-align: center;
+                padding-bottom: rem(60);
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        padding: rem(15) rem(30);
+        margin: 0 auto;
+        border-radius: rem(25);
+        border: rem(2) solid $red;
+        background-color: $white;
+        color: $red;
+        font: rem(14) $montserratBold;
+        cursor: pointer;
+    }
+}

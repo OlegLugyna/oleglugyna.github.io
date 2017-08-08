@@ -1,0 +1,89 @@
+& {
+    &__title {
+        text-align: center;
+        padding: rem(100) 0 rem(40);
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+
+        .figure {
+            position: relative;
+            max-width: 22.24%;
+            margin-right: rem(20);
+            
+            .contant {
+                position: relative;
+
+                .jcarousel {
+                    position: relative;
+                    overflow: hidden;
+                    width: 300px;
+
+                    ul {
+                        width: 20000em;
+                        position: relative;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        
+                    }
+
+                    &__image {
+                        display: block;
+                        margin: 0 auto;
+                        float: left;
+
+                        img {
+                        display: block;
+                        max-width: 100%;   
+                        height: rem(400);
+                        }
+                    }
+                }
+
+                .jcarousel-prev {
+                    position: absolute;
+                    left:10px;
+                    top:40%;
+                }
+
+                .jcarousel-next {
+                    position: absolute;
+                    left:260px;
+                    top:40%;
+                }    
+            }
+
+            .caption {
+                width: 86.67%;
+                margin: 0 auto;
+                color: $white;
+                position: absolute;
+                bottom: rem(20);
+                left: 8%;
+                
+                &__btn {
+                    line-height: rem(20);
+                    padding: 0 rem(17) 0;
+                    border-radius: rem(10);
+                    background-color: $red;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                }
+
+                &__headline {
+                    padding: rem(20) 0 rem(20);
+                    line-height: rem(25);
+                }
+
+                &__text {
+                    @include text;
+                    line-height: 15px;
+                }
+            }
+        }   
+    }
+}
