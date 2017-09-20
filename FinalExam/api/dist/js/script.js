@@ -20,6 +20,10 @@ $(function() {
 
   var section = document.querySelector('.tile');
 
+  var apiUrl = 'https://pixabay.com/api/?key=5722856-55f0750c7fd7b55c44652343b&q=cats+flowers&image_type=photo&pretty=true&per_page=9';
+  apiQuery();
+  masonryStart();
+
   function createApi() {
 
     var input = section.querySelector('.input__form');
@@ -31,12 +35,10 @@ $(function() {
   //console.log (createApi());
 
   function apiQuery() {
-    // var masonry = document.getElementById('masonry');
     var container = section.querySelector('#container');
-    // var container = document.getElementById('masonry');
     var source = document.getElementById('template').textContent;
     var compiled = _.template(source);
-    var apiUrl = createApi();
+    apiUrl = createApi();
     //console.log ('apiUrl', apiUrl);
     var apiQuery = fetch(apiUrl);
     apiQuery.then(function (responce) {
@@ -88,7 +90,4 @@ $(function() {
       });
     }, 500);
   }
-
-
-
 })();
